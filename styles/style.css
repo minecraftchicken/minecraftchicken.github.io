@@ -25,10 +25,12 @@
   }
 
 
+
 /* ----- Typography -----*/
 
 html {
     overflow: hidden;       /* Hide scrollbars */
+    -webkit-tap-highlight-color: #ffffff17;     /* For mobile: Color for when user taps an image link or something to replace default blue */
 }
 
 .cursor {
@@ -53,6 +55,7 @@ a, a:visited {
     transition: all 0.33s ease;
     color: white;
     text-decoration: none;
+    
 }
 
 .myname {
@@ -66,14 +69,16 @@ a, a:visited {
 
 .motto {
     font-family: Manrope;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 15px;
 }
+
 
 /* ----- Remove default margin ----- */
 body {
     margin: 0px 0px;
 }
+
 
 /* ----- Hamburger Icon animation ----- */
 .hamburger, .info-text {
@@ -105,15 +110,14 @@ body {
     transform: rotate(45deg) translate(-3px, -3px);
   }
 
-/* ----- Hamburger Itself ----- */
 
+/* ----- Hamburger Itself ----- */
 .hamburger {
     transform: none;
 }
 
+
 /* ----- Hamburger Menu -----*/
-
-
 #hamburger-menu {
     position: fixed;
     top: 0;
@@ -164,8 +168,8 @@ body {
     fill: #ff6738;
 }
 
-/* ----- Page elements ----- */
 
+/* ----- Page elements ----- */
 .header-text {
     width: 93%;                 /* Adding space around the header */
 }
@@ -197,6 +201,7 @@ header {
     filter: invert(47%) sepia(56%) saturate(1914%) hue-rotate(337deg) brightness(103%) contrast(101%);
 }
 
+
 /* Header title and text */
 .header-text {
     color: white;
@@ -212,8 +217,8 @@ header {
 }
 
 
-/* Flex Container / Main Pages*/
 
+/* Flex Container / Main Pages*/
 .flex-container {
     display: flex;
     flex-direction: row;    /* Horzontal flexbox */
@@ -228,6 +233,10 @@ header {
   
 }
 
+.flex-text-container {
+    position: absolute;
+}
+
 /* Horizontal scroll class */
 .wrapper-scroll {
   -webkit-overflow-scrolling: touch;
@@ -236,9 +245,47 @@ header {
 
 .flex-items {
     min-width: 350px;       /* maximum size of per image */
+    position: relative;
+}
+
+
+/* Section Texts */
+.flex-item-header, .flex-item-desc {      /* Applies common styles once */
+    z-index: 2;            /* Keeps it in the back */
+    color: white;
+    position: absolute;
+    margin-left: 35px;
+    
+
+    border: solid 2px turquoise;
+}
+
+.flex-item-header {     /* Moves header up from bottom */
+    bottom: 10vh;
+}
+
+.flex-item-desc {
+    bottom: 7vh;
+    font-weight: 400;
+    transform: translateY(-20px);
+    transition: all .33s ease;
+    opacity: 0;
+}
+
+#first-link:hover .flex-item-desc {
+    transition: all .33s ease;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#second-link:hover .flex-item-desc {
+    transition: all .33s ease;
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .global-home-image-class {
+    /* Before state for hover */
     transition: all 0.33s ease;
     object-fit: cover;
     user-drag: none; 
@@ -247,8 +294,6 @@ header {
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-
-    /* Before state for hover */
 }
 
 .global-home-image-class:hover {
@@ -258,8 +303,8 @@ header {
     filter: brightness(0.6);    /* duplicated for some browsers */
 }
 
-/* ---- Navigation arrows ---- */
 
+/* ---- Navigation arrows ---- */
 i.arrow-R {
     position: absolute;
     bottom: 50%;
@@ -293,6 +338,7 @@ i.arrow-L {
     }
 }
 
+
 /* Making it responsive */
 @media only screen and (max-width: 720px) {
 
@@ -302,13 +348,14 @@ i.arrow-L {
         font-size: 25px;
     }
 
+
     /* Making header text disappear */
     .header-text {
         visibility: hidden;
     }
 
-    /* Header elements */
 
+    /* Header elements */
     .logo-container {
         align-items: center;        /* Aligning items inside div to center*/
         flex: 1;
@@ -320,6 +367,7 @@ i.arrow-L {
         min-width: 390px;       /* maximum size of per image */
     }
 
+
     /* Make normal scrolling possible on mobile */
     .flex-container {
         overflow: scroll;
@@ -329,12 +377,14 @@ i.arrow-L {
         display: none;
     }
 
+
     /* Hide cursor on mobile */
     .cursor {
         width: 0;
         height: 0;
         visibility: hidden;
     }
+
 
     /* Navigation arrows */
     i.arrow-R {
@@ -347,6 +397,45 @@ i.arrow-L {
         left: 5px;
     }
 
+
+    /* hamburger animation */
+    #hamburger-menu {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease;
+        background-color: rgba(29, 29, 29, 0.699);
+        opacity: 0;
+        transform: translateY(0px);
+        z-index: -1;
+      }
+    
+    #hamburger-menu.hamburger-active {
+        transform: translateY(0px);
+        opacity: 1;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(15, 15, 15);
+    }
+    .menu-items {
+        transition: all 0.3s ease;
+        transform: translateY(0px);
+    }
+
+    .menu-items .hamburger-active {
+        transition: all 0.3s ease;
+        transform: translateY(100px);
+    }
+
+    .menu-items:after {
+        transform: translateY(100px);
+    }
+
+
     /* Header */
     .bar1, .bar2, .bar3 {
         width: 26px;
@@ -357,7 +446,7 @@ i.arrow-L {
     }
 
     .hamburger {
-        justify-self: flex-end;
+        justify-self: flex-end;     /* Keeps logo and hamburger in center */
     }
 
     header {
@@ -368,4 +457,24 @@ i.arrow-L {
             width: 35px;
             height: 35px;
       }
+
+
+      /* Section Texts */
+    .flex-item-header, .flex-item-desc {
+        transform: translateY(20px);
+        opacity: 1;
+    }
+    /* Remove hover effects */
+    #first-link:hover .flex-item-desc {
+        transform: translateY(20px);
+        opacity: 1;
+    }
+    
+    #second-link:hover .flex-item-desc {
+        transform: translateY(20px);
+        opacity: 1;
+    }
+
+    
+
 }
