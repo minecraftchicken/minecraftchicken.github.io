@@ -26,43 +26,14 @@ document.addEventListener('click', () => {
 
 /* Click to scroll event (RIGHT) */
 $('a.scroll-right').click(function() {
-var pos = $('div.flex-container').scrollLeft() + 400;
+var pos = $('div.flex-container').scrollLeft() + 390;
 $('div.flex-container').scrollLeft(pos);
 });
 
 /* Click to scroll event (LEFT) */
 $('a.scroll-left').click(function() {
-    var pos = $('div.flex-container').scrollLeft() + -400;
+    var pos = $('div.flex-container').scrollLeft() + -390;
     $('div.flex-container').scrollLeft(pos);
     });
 
 
-
-
-/* Scroll to top 
-
-$(function() {
-    $('#wrapper').scroll( function() {
-        if ( $('#wrapper').scrollLeft() >= ($('#wrapper').width() - $('#wrapper').width())) {
-            $('#scroller-fadeL').toggleClass('scroll-left-alt');
-        }
-    });
-});
-*/
-
-
-
-$(function() {
-    $('#wrapper').scroll( function() {
-        var $width = $('#wrapper').outerWidth()
-        var $scrollWidth = $('#wrapper')[0].scrollWidth; 
-        var $scrollLeft = $('#wrapper').scrollLeft();
-
-        if ($scrollWidth - $width === 0){
-            alert('right end');
-        }
-        if ($scrollLeft===0){
-            alert('left end');
-        }
-    });
-});

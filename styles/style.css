@@ -283,16 +283,6 @@ i.arrow-L {
 }
 
 
-
-.leftHide {
-    opacity: 0;
-}
-
-#leftShow {
-    opacity: 1;
-}
-
-
 /* Keyframes for cursor animation */
 @keyframes cursorAnim {
     from {
@@ -308,8 +298,8 @@ i.arrow-L {
 
     /* List item size change */
     .menu-items-list  {
-        padding: 0px 30px;
-        font-size: 27px;
+        padding: 0px 15px;
+        font-size: 25px;
     }
 
     /* Making header text disappear */
@@ -326,4 +316,56 @@ i.arrow-L {
         margin: 0% 5%;
     }
 
-  }
+    .flex-items {
+        min-width: 390px;       /* maximum size of per image */
+    }
+
+    /* Make normal scrolling possible on mobile */
+    .flex-container {
+        overflow: scroll;
+        display: flex;
+    }
+    #wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide cursor on mobile */
+    .cursor {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+
+    /* Navigation arrows */
+    i.arrow-R {
+        opacity: 0.3;
+        right: 5px;
+    }
+    
+    i.arrow-L {
+        opacity: 0.3;
+        left: 5px;
+    }
+
+    /* Header */
+    .bar1, .bar2, .bar3 {
+        width: 26px;
+        height: 3px;
+        background-color: rgb(252, 252, 252);
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    .hamburger {
+        justify-self: flex-end;
+    }
+
+    header {
+        margin-top: 15px;
+    }
+
+        .logo-image {
+            width: 35px;
+            height: 35px;
+      }
+}
