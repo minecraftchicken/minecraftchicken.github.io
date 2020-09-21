@@ -1,0 +1,329 @@
+/* For Material Design Icon font*/
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+
+/* ----- Typography -----*/
+
+html {
+    overflow: hidden;       /* Hide scrollbars */
+}
+
+.cursor {
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.514);
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim 1s infinite alternate;
+    pointer-events: none;
+}
+
+body {
+    font-family: Manrope;
+}
+
+a, a:visited {
+    transition: all 0.33s ease;
+    color: white;
+    text-decoration: none;
+}
+
+.myname {
+    font-size: 20px;
+}
+
+.myname, .title-text {
+    font-family: Manrope;
+    font-weight: 800;
+}
+
+.motto {
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* ----- Remove default margin ----- */
+body {
+    margin: 0px 0px;
+}
+
+/* ----- Hamburger Icon animation ----- */
+.hamburger, .info-text {
+    z-index: 2;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(252, 252, 252);
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-2px, 2px);
+  }
+
+  .change .info-text {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-3px, -3px);
+  }
+
+/* ----- Hamburger Itself ----- */
+
+.hamburger {
+    transform: none;
+}
+
+/* ----- Hamburger Menu -----*/
+
+
+#hamburger-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease;
+    background-color: rgba(29, 29, 29, 0.699);
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+#hamburger-menu.hamburger-active {
+    transform: translateY(0px);
+    opacity: 1;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(15, 15, 15);
+    
+}
+
+.menu-items {
+    transition: all .33s ease;
+    padding: 0;
+    top: 50%;
+    width: 100%;
+    font-weight: 800;
+    list-style: none;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-items-list  {
+    transition: all 0.33s ease;
+    padding: 0px 70px;
+    font-size: 35px;
+    color: white;
+}
+
+.menu-items-list, a:hover {
+    transition: color 0.33s ease;
+    color: #ff6738;
+    fill: #ff6738;
+}
+
+/* ----- Page elements ----- */
+
+.header-text {
+    width: 93%;                 /* Adding space around the header */
+}
+
+header {
+    margin: auto;               /* Centering header to the page */
+    margin-top: 20px;
+    position: absolute;         /* To make sure all other elements are under it */
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo-container {
+    align-items: center;        /* Aligning items inside div to center*/
+    flex: 1;
+    display: flex;              /* Making the logo take entire width of the header*/
+    margin: 0% 2%;
+    margin-right: 10px;
+}
+
+.logo-image {
+    filter: invert(100%) sepia(0%) saturate(7472%) hue-rotate(114deg) brightness(109%) contrast(97%);
+    padding-right: 10px;
+}
+
+.logo-image:hover {
+    /* Logo color in filter because SVG */
+    filter: invert(47%) sepia(56%) saturate(1914%) hue-rotate(337deg) brightness(103%) contrast(101%);
+}
+
+/* Header title and text */
+.header-text {
+    color: white;
+    line-height: 5px;           /* Removing empty space between name and other text */
+}
+
+.title-text {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+
+/* Flex Container / Main Pages*/
+
+.flex-container {
+    display: flex;
+    flex-direction: row;    /* Horzontal flexbox */
+    height: 100%;
+    width: 100%;
+    position: absolute; 
+    z-index: -1;            /* Keeps it in the back */
+
+    justify-content: left;  /* Starts from the left */
+    scroll-behavior: smooth;
+    overflow: hidden;       /* Hide scrollbars */
+  
+}
+
+/* Horizontal scroll class */
+.wrapper-scroll {
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
+.flex-items {
+    min-width: 350px;       /* maximum size of per image */
+}
+
+.global-home-image-class {
+    transition: all 0.33s ease;
+    object-fit: cover;
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    /* Before state for hover */
+}
+
+.global-home-image-class:hover {
+    /* After state for hover */
+    transition: all 0.33s ease;
+    -webkit-filter: brightness(0.6);
+    filter: brightness(0.6);    /* duplicated for some browsers */
+}
+
+/* ---- Navigation arrows ---- */
+
+i.arrow-R {
+    position: absolute;
+    bottom: 50%;
+    right: 20px;
+
+    width: 40px;
+    height: 40px;
+    fill: white;
+    font-size: 40px;
+}
+
+i.arrow-L {
+    position: absolute;
+    bottom: 50%;
+    left: 20px;
+
+    width: 40px;
+    height: 40px;
+    fill: white;
+    font-size: 40px;
+}
+
+
+
+.leftHide {
+    opacity: 0;
+}
+
+#leftShow {
+    opacity: 1;
+}
+
+
+/* Keyframes for cursor animation */
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+/* Making it responsive */
+@media only screen and (max-width: 720px) {
+
+    /* List item size change */
+    .menu-items-list  {
+        padding: 0px 30px;
+        font-size: 27px;
+    }
+
+    /* Making header text disappear */
+    .header-text {
+        visibility: hidden;
+    }
+
+    /* Header elements */
+
+    .logo-container {
+        align-items: center;        /* Aligning items inside div to center*/
+        flex: 1;
+        display: flex;              /* Making the logo take entire width of the header*/
+        margin: 0% 5%;
+    }
+
+  }
