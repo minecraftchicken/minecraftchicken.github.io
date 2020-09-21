@@ -249,7 +249,7 @@ header {
 }
 
 
-/* Section Texts */
+/* Section title/heading -- Section textx -- */
 .flex-item-header, .flex-item-desc {      /* Applies common styles once */
     z-index: 2;            /* Keeps it in the back */
     color: white;
@@ -261,6 +261,12 @@ header {
     bottom: 10vh;
 }
 
+/* Div containing section Title and Link icon */
+.head-icon{         
+    vertical-align: middle;
+}
+
+/* Section description */
 .flex-item-desc {
     bottom: 7vh;
     font-weight: 400;
@@ -269,6 +275,19 @@ header {
     opacity: 0;
 }
 
+.link-icon {
+    position: absolute;
+    fill: white;
+    font-size: 25px;
+}
+
+#fifth-link:hover .link-icon {
+    transition: all .33s ease;
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+/* ----- HOME LINKS ----- */
 #first-link:hover .flex-item-desc {
     transition: all .33s ease;
     transform: translateY(0);
@@ -280,6 +299,26 @@ header {
     transform: translateY(0);
     opacity: 1;
 }
+
+#third-link:hover .flex-item-desc {
+    transition: all .33s ease;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#fourth-link:hover .flex-item-desc {
+    transition: all .33s ease;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#fifth-link:hover .flex-item-desc {
+    transition: all .33s ease;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
 
 .global-home-image-class {
     /* Before state for hover */
@@ -471,7 +510,21 @@ i.arrow-L {
         transform: translateY(20px);
         opacity: 1;
     }
-
+    
+    #third-link:hover .flex-item-desc {
+        transform: translateY(20px);
+        opacity: 1;
+    }
+    
+    #fourth-link:hover .flex-item-desc {
+        transform: translateY(20px);
+        opacity: 1;
+    }
+    
+    #fifth-link:hover .flex-item-desc {
+        transform: translateY(20px);
+        opacity: 1;
+    }
     
 
 }
