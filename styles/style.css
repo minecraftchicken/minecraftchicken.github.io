@@ -31,9 +31,11 @@
 html {
     overflow: hidden;       /* Hide scrollbars */
     -webkit-tap-highlight-color: #ffffff17;     /* For mobile: Color for when user taps an image link or something to replace default blue */
+    cursor: none;
 }
 
 .cursor {
+    z-index: 3;
     margin: 0;
     padding: 0;
     width: 20px;
@@ -41,8 +43,8 @@ html {
     border: 3px solid rgba(255, 255, 255, 0.514);
     border-radius: 50%;
     position: absolute;
-    transition-duration: 100ms;
-    transition-timing-function: ease-out;
+    transition-duration: 20ms;
+    transition-timing-function: ease;
     animation: cursorAnim 1s infinite alternate;
     pointer-events: none;
 }
@@ -55,7 +57,7 @@ a, a:visited {
     transition: all 0.33s ease;
     color: white;
     text-decoration: none;
-    
+    cursor: none;
 }
 
 .myname {
@@ -77,13 +79,13 @@ a, a:visited {
 /* ----- Remove default margin ----- */
 body {
     margin: 0px 0px;
+    cursor: none;
 }
 
 
 /* ----- Hamburger Icon animation ----- */
 .hamburger, .info-text {
     z-index: 2;
-    cursor: pointer;
     align-items: center;
   }
   
@@ -123,7 +125,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    transition: all .5s ease;
+    transition: all .4s ease;
     background-color: rgba(29, 29, 29, 0.699);
     opacity: 0;
     transform: translateY(-100%);
@@ -165,6 +167,7 @@ body {
 .menu-items-list, a:hover {
     transition: color 0.33s ease;
     color: #ff6738;
+    cursor: none;
 }
 
 /* Social Icons */
