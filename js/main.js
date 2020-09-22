@@ -37,3 +37,13 @@ $('a.scroll-left').click(function() {
     });
 
 
+/* Add class to cursor on hover */
+    $(document).ready(function() {  
+    /* Classes & IDs that needs to be hovered */   
+        $('#hamburger-hover, .menu-items-list, .social-icon, .logo-image, .scroll-left, .scroll-right').hover(function(){      
+            $('#cursor-hover').addClass('cursor-hover-active');    
+        },     
+        function(){    
+            $('#cursor-hover').removeClass('cursor-hover-active');     
+        });
+    });  
