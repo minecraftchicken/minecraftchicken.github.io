@@ -165,7 +165,30 @@ body {
 .menu-items-list, a:hover {
     transition: color 0.33s ease;
     color: #ff6738;
-    fill: #ff6738;
+}
+
+/* Social Icons */
+
+.social-links {
+    transition-delay: 1s;
+    transition: all .33s ease;
+    bottom: 5%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon  {
+    transition: all 0.33s ease;
+    padding: 0px 20px;
+    font-size: 25px;
+    color: white;
+}
+.social-icon:hover  {
+    color: #ff6738;
 }
 
 
@@ -255,15 +278,8 @@ header {
     color: white;
     position: absolute;
     margin-left: 35px;
-}
-
-.flex-item-header {     /* Moves header up from bottom */
-    bottom: 10vh;
-}
-
-/* Div containing section Title and Link icon */
-.head-icon{         
-    vertical-align: middle;
+    bottom: 8vh;
+    transition: all .33s ease;
 }
 
 /* Section description */
@@ -275,24 +291,19 @@ header {
     opacity: 0;
 }
 
-.link-icon {
-    position: absolute;
-    fill: white;
-    font-size: 25px;
-}
-
-#fifth-link:hover .link-icon {
-    transition: all .33s ease;
-    transform: translateX(0px);
-    opacity: 1;
-}
-
-/* ----- HOME LINKS ----- */
+/* ----- HOME LINKS HOVER ----- */
 #first-link:hover .flex-item-desc {
     transition: all .33s ease;
     transform: translateY(0);
     opacity: 1;
 }
+
+#first-link:hover .flex-item-header {
+    transition: all .33s ease;
+    bottom: 10vh;
+}
+
+/* --- */
 
 #second-link:hover .flex-item-desc {
     transition: all .33s ease;
@@ -300,11 +311,25 @@ header {
     opacity: 1;
 }
 
+#second-link:hover .flex-item-header {
+    transition: all .33s ease;
+    bottom: 10vh;
+}
+
+/* --- */
+
 #third-link:hover .flex-item-desc {
     transition: all .33s ease;
     transform: translateY(0);
     opacity: 1;
 }
+
+#third-link:hover .flex-item-header {
+    transition: all .33s ease;
+    bottom: 10vh;
+}
+
+/* --- */
 
 #fourth-link:hover .flex-item-desc {
     transition: all .33s ease;
@@ -312,13 +337,25 @@ header {
     opacity: 1;
 }
 
+#fourth-link:hover .flex-item-header {
+    transition: all .33s ease;
+    bottom: 10vh;
+}
+
+/* --- */
+
 #fifth-link:hover .flex-item-desc {
     transition: all .33s ease;
     transform: translateY(0);
     opacity: 1;
 }
 
+#fifth-link:hover .flex-item-header {
+    transition: all .33s ease;
+    bottom: 10vh;
+}
 
+/* --- */
 
 .global-home-image-class {
     /* Before state for hover */
@@ -335,8 +372,8 @@ header {
 .global-home-image-class:hover {
     /* After state for hover */
     transition: all 0.33s ease;
-    -webkit-filter: brightness(0.6);
-    filter: brightness(0.6);    /* duplicated for some browsers */
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5);    /* duplicated for some browsers */
 }
 
 
@@ -383,7 +420,10 @@ i.arrow-L {
         padding: 0px 15px;
         font-size: 25px;
     }
-
+    
+    .social-icon  {
+        font-size: 22px;
+    }
 
     /* Making header text disappear */
     .header-text {
@@ -457,19 +497,6 @@ i.arrow-L {
         height: 100%;
         background-color: rgb(15, 15, 15);
     }
-    .menu-items {
-        transition: all 0.3s ease;
-        transform: translateY(0px);
-    }
-
-    .menu-items .hamburger-active {
-        transition: all 0.3s ease;
-        transform: translateY(100px);
-    }
-
-    .menu-items:after {
-        transform: translateY(100px);
-    }
 
 
     /* Header */
@@ -500,7 +527,14 @@ i.arrow-L {
         transform: translateY(20px);
         opacity: 1;
     }
+
     /* Remove hover effects */
+
+    .flex-item-header {
+        bottom: 10vh;
+    }
+    
+    /* --- */
     #first-link:hover .flex-item-desc {
         transform: translateY(20px);
         opacity: 1;
