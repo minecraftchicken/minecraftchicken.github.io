@@ -210,9 +210,12 @@
 
     <script>
         let magicScroll = new MagicScroll({
-            speed: 80, smooth: 12
-        });
-    </script>`
+    target: document.querySelector(".scrollableElement"),
+    speed: 80,
+    smooth: 12,
+    current: 0 // position
+});
+    </script>
 </body>
 
 </html>

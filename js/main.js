@@ -20,10 +20,19 @@ document.addEventListener('click', () => {
     }, 500)
 })
 
+/* Add class to cursor on hover */
+$(document).ready(function() {  
+    /* Classes & IDs that needs to be hovered */   
+        $('#hamburger-hover, #menu-item-hover, .social-icon, .logo-image, .flex-item-header').hover(function(){      
+            $('#cursor-hover').addClass('cursor-hover-active');    
+        },     
+        function(){    
+            $('#cursor-hover').removeClass('cursor-hover-active');     
+        });
+    });  
 
 
-
-/* Smooth mousehweel scroll */
+/* Smooth mousehweel scroll 
 function init() {
     new SmoothScroll(document, 120, 12)
 }
@@ -92,7 +101,7 @@ function SmoothScroll(target, speed, smooth) {
         );
     }()
 }
-
+*/
 
 
 
