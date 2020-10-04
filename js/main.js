@@ -23,7 +23,7 @@ document.addEventListener('click', () => {
 
 
 
-/* Smooth mousehweel scroll */
+/* Smooth mousehweel scroll 
 function init(){
 	new SmoothScroll(document,120,12)
 }
@@ -92,6 +92,9 @@ function SmoothScroll(target, speed, smooth) {
 		);
 	}()
 }
+
+*/
+
 
 
 

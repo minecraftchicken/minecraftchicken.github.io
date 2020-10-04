@@ -275,8 +275,7 @@ header {
 
 /* Parent section container */
 .parent-sec-container {
-    position: absolute;
-    top: 110px;
+    margin-top: 110px;
     z-index: -1;
 
     min-width: 100vw;
@@ -292,6 +291,7 @@ header {
 .child-sec-container {
     width: 30%;
     margin: 10px 10px;
+    z-index: 1;
 }
 
 .g-child-sec-container {
@@ -667,8 +667,7 @@ header {
 
     /* Parent section container */
     .parent-sec-container {
-        position: absolute;
-        top: 80px;
+        margin-top: 80px;
         z-index: -1;
 
         min-width: 100vw;
