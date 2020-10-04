@@ -1,10 +1,42 @@
 /* ----- Top Level Styles -----*/
 
 html {
-    overflow: hidden;       /* Hide scrollbars */
     -webkit-tap-highlight-color: #ffffff17;     /* For mobile: Color for when user taps an image link or something to replace default blue */
-    cursor: none;
+    
 }
+
+body {
+    overflow-x: hidden;
+
+    margin: 0px 0px;    /* Remove default margin */
+    /* cursor: none;        Remove cursor */
+
+    font-family: Manrope;
+    font-family: Manrope; 
+    background-color: black;
+    /* For page load animation */
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+     -ms-animation: fadein 1s; /* Internet Explorer */
+      -o-animation: fadein 1s; /* Opera < 12.1 */
+         animation: fadein 1s;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    transition: all 0.33s ease;
+    background-color: #ffffff48;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    transition: all 0.33s ease;
+    background-color: #ff6639;
+}
+
 
 .cursor {
     z-index: 3;
@@ -24,34 +56,11 @@ html {
     background-color: rgb(255, 255, 255);
 }
 
-body {
-    font-family: Manrope;
-    font-family: Manrope; 
-    background-color: black;
-    /* For page load animation */
-    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 1s; /* Firefox < 16 */
-     -ms-animation: fadein 1s; /* Internet Explorer */
-      -o-animation: fadein 1s; /* Opera < 12.1 */
-         animation: fadein 1s;
-}
-
-@keyframes fadein {
-    from {
-        margin-top: 100px;
-        opacity: 0.5;
-    }
-    to  {
-        margin-top: 0px;
-        opacity: 1;
-    }
-}
-
 a, a:visited {
     transition: all 0.33s ease;
     color: white;
     text-decoration: none;
-    cursor: none;
+    /* cursor: none;   Remove cursor */
 }
 
 /* Text Selection color */
@@ -79,12 +88,6 @@ a, a:visited {
 }
 
 
-/* ----- Remove default margin ----- */
-body {
-    margin: 0px 0px;
-    cursor: none;
-}
-
 /* ----- Hamburger Icon animation ----- */
 .hamburger, .info-text {
     z-index: 2;
@@ -93,6 +96,10 @@ body {
   
 .hamburger {
     padding: 10px
+}
+
+.hamburger:hover {
+    cursor: pointer;
 }
 
   .bar1, .bar2, .bar3 {
@@ -173,7 +180,7 @@ body {
 .menu-items-list, a:hover {
     transition: color 0.33s ease;
     color: #ff6738;
-    cursor: none;
+    /* cursor: none;   Remove cursor */
 }
 
 /* Social Icons */
@@ -224,13 +231,14 @@ header {
 }
 
 .logo-image {
-    filter: invert(100%) sepia(0%) saturate(7472%) hue-rotate(114deg) brightness(109%) contrast(97%);
+    /* Logo color in filter because SVG */
+    filter: invert(47%) sepia(56%) saturate(1914%) hue-rotate(337deg) brightness(103%) contrast(101%);
     padding-right: 10px;
 }
 
 .logo-image:hover {
     /* Logo color in filter because SVG */
-    filter: invert(47%) sepia(56%) saturate(1914%) hue-rotate(337deg) brightness(103%) contrast(101%);
+    filter: invert(100%) sepia(0%) saturate(7472%) hue-rotate(114deg) brightness(109%) contrast(97%);
 }
 
 
@@ -249,164 +257,143 @@ header {
 }
 
 
+/* Parent section container */
+.parent-sec-container {
+    position: absolute;
+    top: 110px;
+    z-index: -1;
 
-/* Flex Container / Main Pages*/
-.flex-container {
+    min-width: 100vw;
+    max-width: 100vw;
+
+    height: 100vh;
+
     display: flex;
-    height: 100%;
-    width: 100%;
-    position: absolute; 
-    z-index: -1;            /* Keeps it in the back */
-
-    justify-content: left;  /* Starts from the left */
-    scroll-behavior: smooth;
-    overflow: hidden;       /* Hide scrollbars */
-  
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
 }
 
-.flex-text-container {
-    position: absolute;
+/* Child section container */
+.child-sec-container {
+    width: 30%;
+    margin: 10px 10px;
 }
 
-/* Horizontal scroll class */
-.wrapper-scroll {
-  -webkit-overflow-scrolling: touch;
-  overflow-scrolling: touch;
-}
-
-.flex-items {
-    min-width: 350px;       /* maximum size of per image */
+.g-child-sec-container {
+    height: 600px;
     position: relative;
+
 }
 
+/* Class of images in child containers */
+.home-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.33s ease;
+}
 
-/* Section title/heading -- Section textx -- */
-.flex-item-header, .flex-item-desc {      /* Applies common styles once */
-    z-index: 2;            /* Keeps it in the back */
-    color: white;
+.home-img:hover {
+    /* After state for hover */
+    transition: all 0.33s ease;
+    -webkit-filter: brightness(0.6);
+    filter: brightness(0.5);    /* duplicated for some browsers */
+}
+
+/* Class of section texts in child containers */
+.text-container {
     position: absolute;
-    margin-left: 35px;
-    bottom: 8vh;
-    transition: all .33s ease;
-    pointer-events: none;       /* Makes them non interactive/clickable */
+    margin-left: 30px;
+    margin-bottom: 10px;
+    bottom: -25px;
+    z-index: 2;
 }
 
-/* Section description */
-.flex-item-desc {
-    bottom: 7vh;
+.sec-title, .sec-description {
+    color: whitesmoke;
+}
+
+.sec-title {
+    margin-bottom: 0px;
+    transform: translateY(0px);
+    transition: all .33s ease;
+}
+
+.sec-description {
+    margin-top: 5px;
     font-weight: 400;
-    transform: translateY(-20px);
+
+    transform: translateY(-35px);
     transition: all .33s ease;
     opacity: 0;
 }
 
 /* ----- HOME LINKS HOVER ----- */
-#first-link:hover .flex-item-desc {
+#link-1:hover .sec-title {
+    transform: translateY(-20px);
     transition: all .33s ease;
-    transform: translateY(0);
+}
+
+#link-1:hover .sec-description {
+    transition: all .33s ease;
+    transform: translateY(-20px);
     opacity: 1;
 }
 
-#first-link:hover .flex-item-header {
+#link-2:hover .sec-title {
+    transform: translateY(-20px);
     transition: all .33s ease;
-    bottom: 10vh;
 }
 
-/* --- */
-
-#second-link:hover .flex-item-desc {
+#link-2:hover .sec-description {
     transition: all .33s ease;
-    transform: translateY(0);
+    transform: translateY(-20px);
     opacity: 1;
 }
 
-#second-link:hover .flex-item-header {
+#link-3:hover .sec-title {
+    transform: translateY(-20px);
     transition: all .33s ease;
-    bottom: 10vh;
 }
 
-/* --- */
-
-#third-link:hover .flex-item-desc {
+#link-3:hover .sec-description {
     transition: all .33s ease;
-    transform: translateY(0);
+    transform: translateY(-20px);
     opacity: 1;
 }
 
-#third-link:hover .flex-item-header {
+#link-4:hover .sec-title {
+    transform: translateY(-20px);
     transition: all .33s ease;
-    bottom: 10vh;
 }
 
-/* --- */
-
-#fourth-link:hover .flex-item-desc {
+#link-4:hover .sec-description {
     transition: all .33s ease;
-    transform: translateY(0);
+    transform: translateY(-20px);
     opacity: 1;
 }
 
-#fourth-link:hover .flex-item-header {
+#link-5:hover .sec-title {
+    transform: translateY(-20px);
     transition: all .33s ease;
-    bottom: 10vh;
 }
 
-/* --- */
-
-#fifth-link:hover .flex-item-desc {
+#link-5:hover .sec-description {
     transition: all .33s ease;
-    transform: translateY(0);
+    transform: translateY(-20px);
     opacity: 1;
 }
 
-#fifth-link:hover .flex-item-header {
+#link-6:hover .sec-title {
+    transform: translateY(-20px);
     transition: all .33s ease;
-    bottom: 10vh;
 }
 
-/* --- */
-
-.global-home-image-class {
-    /* Before state for hover */
-    transition: all 0.33s ease;
-    object-fit: cover;
-    user-drag: none; 
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-}
-
-.global-home-image-class:hover {
-    /* After state for hover */
-    transition: all 0.33s ease;
-    -webkit-filter: brightness(0.5);
-    filter: brightness(0.5);    /* duplicated for some browsers */
-}
-
-
-/* ---- Navigation arrows ---- */
-i.arrow-R {
-    position: absolute;
-    bottom: 50%;
-    right: 20px;
-
-    width: 40px;
-    height: 40px;
-    fill: white;
-    font-size: 40px;
-}
-
-i.arrow-L {
-    position: absolute;
-    bottom: 50%;
-    left: 20px;
-
-    width: 40px;
-    height: 40px;
-    fill: white;
-    font-size: 40px;
+#link-6:hover .sec-description {
+    transition: all .33s ease;
+    transform: translateY(-20px);
+    opacity: 1;
 }
 
 
@@ -420,7 +407,143 @@ i.arrow-L {
     }
 }
 
-/* Making it responsive */
+/* On page load animation
+@keyframes fadein {
+    from {
+        margin-top: 100px;
+        opacity: 0.5;
+    }
+    to  {
+        margin-top: 0px;
+        opacity: 1;
+    }
+} */
+
+
+/* --- Tablet Responsive --- */
+@media only screen and (max-width: 1080px) {
+
+    
+    /* Child section container */
+    .child-sec-container {
+        width: 30%;
+        margin: 10px 10px;
+    }
+
+    .g-child-sec-container {
+        height: 500px;
+        position: relative;
+    }
+
+
+    /* Responsive text size */
+    .sec-description {
+        font-size: 16px;
+    }
+
+    .sec-title {
+        font-size: 28px;
+    }
+
+    
+
+    /* Class of section texts in child containers */
+    .text-container {
+        margin-left: 15px;
+    }
+    
+    .sec-title, .sec-description {
+        color: whitesmoke;
+    }
+
+    .sec-title {
+        margin-bottom: 0px;
+        transform: translateY(-20px);
+        transition: all .33s ease;
+    }
+
+    .sec-description {
+        margin-top: 5px;
+        font-weight: 400;
+
+        transform: translateY(-20px);
+        transition: all .33s ease;
+        opacity: 1;
+    }
+    
+
+    /* ----- HOME LINKS HOVER ----- */
+    #link-1:hover .sec-title {
+        transform: translateY(-20px);
+        transition: all .33s ease;
+    }
+
+    #link-1:hover .sec-description {
+        transition: all .33s ease;
+        transform: translateY(-20px);
+        opacity: 0.5;
+    }
+
+    #link-2:hover .sec-title {
+        transform: translateY(-20px);
+        transition: all .33s ease;
+    }
+
+    #link-2:hover .sec-description {
+        transition: all .33s ease;
+        transform: translateY(-20px);
+        opacity: 0.5;
+    }
+
+    #link-3:hover .sec-title {
+        transform: translateY(-20px);
+        transition: all .33s ease;
+    }
+
+    #link-3:hover .sec-description {
+        transition: all .33s ease;
+        transform: translateY(-20px);
+        opacity: 0.5;
+    }
+
+    #link-4:hover .sec-title {
+        transform: translateY(-20px);
+        transition: all .33s ease;
+    }
+
+    #link-4:hover .sec-description {
+        transition: all .33s ease;
+        transform: translateY(-20px);
+        opacity: 0.5;
+    }
+
+    #link-5:hover .sec-title {
+        transform: translateY(-20px);
+        transition: all .33s ease;
+    }
+
+    #link-5:hover .sec-description {
+        transition: all .33s ease;
+        transform: translateY(-20px);
+        opacity: 0.5;
+    }
+
+    #link-6:hover .sec-title {
+        transform: translateY(-20px);
+        transition: all .33s ease;
+    }
+
+    #link-6:hover .sec-description {
+        transition: all .33s ease;
+        transform: translateY(-20px);
+        opacity: 0.5;
+    }    
+
+
+}
+
+
+/* --- Mobile Responsive --- */
 @media only screen and (max-width: 720px) {
 
     /* Brings cursor back */
@@ -463,34 +586,11 @@ i.arrow-L {
         min-width: 390px;       /* maximum size of per image */
     }
 
-
-    /* Make normal scrolling possible on mobile */
-    .flex-container {
-        overflow: scroll;
-        display: flex;
-    }
-    #wrapper::-webkit-scrollbar {
-        display: none;
-    }
-
-
     /* Hide cursor on mobile */
     .cursor {
         width: 0;
         height: 0;
         visibility: hidden;
-    }
-
-
-    /* Navigation arrows */
-    i.arrow-R {
-        opacity: 0.3;
-        right: 5px;
-    }
-    
-    i.arrow-L {
-        opacity: 0.3;
-        left: 5px;
     }
 
 
@@ -537,48 +637,38 @@ i.arrow-L {
     }
 
         .logo-image {
-            width: 35px;
-            height: 35px;
+            width: 33px;
+            height: 33px;
       }
+    
 
 
-      /* Section Texts */
-    .flex-item-header, .flex-item-desc {
-        transform: translateY(20px);
-        opacity: 1;
+    /* Parent section container */
+    .parent-sec-container {
+        position: absolute;
+        top: 80px;
+        z-index: -1;
+
+        min-width: 100vw;
+        max-width: 100vw;
+
+        height: 100vh;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
     }
 
-    /* Remove hover effects */
+    .child-sec-container {
+        width: 100%;
+        margin: 5px 10px;
+    }
 
-    .flex-item-header {
-        bottom: 10vh;
+    .g-child-sec-container {
+        height: 300px;
+        position: relative;
+
     }
-    
-    /* --- */
-    #first-link:hover .flex-item-desc {
-        transform: translateY(20px);
-        opacity: 1;
-    }
-    
-    #second-link:hover .flex-item-desc {
-        transform: translateY(20px);
-        opacity: 1;
-    }
-    
-    #third-link:hover .flex-item-desc {
-        transform: translateY(20px);
-        opacity: 1;
-    }
-    
-    #fourth-link:hover .flex-item-desc {
-        transform: translateY(20px);
-        opacity: 1;
-    }
-    
-    #fifth-link:hover .flex-item-desc {
-        transform: translateY(20px);
-        opacity: 1;
-    }
-    
 
 }

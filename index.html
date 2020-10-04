@@ -23,9 +23,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body onload="init()">
 
-    <div class="cursor" id="cursor-hover"></div>
+    <!-- Cursor Div 
+    <div class="cursor" id="cursor-hover"></div> -->
+
+    <!-- Header (Logo Image, Name, Hamburger etc) -->
     <header>
         <!-- Hamburger menu when active -->
 
@@ -80,68 +83,112 @@
         </div>
     </header>
 
+    <!-- Page elements -->
     <main>
-        <div class="flex-container wrapper-scroll" id="wrapper">
-            <div class="flex-items">
-                    <a href="portfolio/portfolio.html" id="first-link">
-                        <h1 class="flex-item-header">Portfolio</h1>
-                        <h3 class="flex-item-desc">Let design speak for itself.</h3>
-                        <img src="images/homepage/image-one.png" width="100%" height="100%" alt="" class="global-home-image-class">
+
+        <div class="parent-sec-container">
+
+            <div class="child-sec-container">
+                <div class="g-child-sec-container">
+
+                    <a href="#" id="link-1">
+
+                        <div class="text-container">
+                            <h1 class="sec-title">Portfolio</h1>
+                            <h3 class="sec-description">Let design speak for itself.</h3>
+                        </div>
+
+                        <img class="home-img" src="/images/homepage/image-one.png" alt="">
                     </a>
-            </div>
-            
-            <div class="flex-items" >
-                <a href="#" id="second-link">
-                    <h1 class="flex-item-header">YouTube</h1>
-                    <h3 class="flex-item-desc">Where I educate & entertain.</h3>
-                    <img src="/images/homepage/image-two.jpg" width="100%" height="100%" alt="" class="global-home-image-class">
-                </a>
+                </div>
+
             </div>
 
-            <div class="flex-items">
-                <a href="#" id="third-link">
-                    <h1 class="flex-item-header">Apps</h1>
-                    <h3 class="flex-item-desc">Making phones look pretty.</h3>
-                    <img src="/images/homepage/image-three.jpg" width="100%" height="100%" alt="" class="global-home-image-class">
-                </a>
+            <div class="child-sec-container">
+                <div class="g-child-sec-container">
+
+                    <a href="#" id="link-2">
+
+                        <div class="text-container">
+                            <h1 class="sec-title">Apps</h1>
+                            <h3 class="sec-description">Making phones look pretty.</h3>
+                        </div>
+
+                        <img class="home-img" src="/images/homepage/image-two.jpg" alt="">
+                    </a>
+                </div>
+
             </div>
 
-            <div class="flex-items">
-                <a href="#" id="fourth-link">
-                    <h1 class="flex-item-header">Store</h1>
-                    <h3 class="flex-item-desc">Pay less for bigger value.</h3>
-                    <img src="/images/homepage/image-four.jpg" width="100%" height="100%" alt="" class="global-home-image-class">
-                </a>
+            <div class="child-sec-container">
+                <div class="g-child-sec-container">
+
+                    <a href="#" id="link-3">
+
+                        <div class="text-container">
+                            <h1 class="sec-title">Store</h1>
+                            <h3 class="sec-description">Pay less for bigger value.</h3>
+                        </div>
+
+                        <img class="home-img" src="/images/homepage/image-three.jpg" alt="">
+                    </a>
+                </div>
             </div>
 
-            <div class="flex-items">
-                <a href="#" id="fifth-link">
-                        <h1 class="flex-item-header">Tasker</h1>
-                        <h3 class="flex-item-desc">Automate your life.</h3>
-                    <img src="/images/homepage/image-five.jpg" width="100%" height="100%" alt="" class="global-home-image-class">
-                </a>
+            <div class="child-sec-container">
+                <div class="g-child-sec-container">
+
+                    <a href="#" id="link-4">
+
+                        <div class="text-container">
+                            <h1 class="sec-title">YouTube</h1>
+                            <h3 class="sec-description">Where I educate & entertain.</h3>
+                        </div>
+
+                        <img class="home-img" src="/images/homepage/image-four.jpg" alt="">
+                    </a>
+                </div>
             </div>
+
+            <div class="child-sec-container">
+                <div class="g-child-sec-container">
+
+                    <a href="#" id="link-5">
+
+                        <div class="text-container">
+                            <h1 class="sec-title">Tasker Projects</h1>
+                            <h3 class="sec-description">Making your life easier</h3>
+                        </div>
+
+                        <img class="home-img" src="/images/homepage/image-five.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="child-sec-container">
+                <div class="g-child-sec-container">
+
+                    <a href="#" id="link-6">
+
+                        <div class="text-container">
+                            <h1 class="sec-title">3D Renders</h1>
+                            <h3 class="sec-description">Default cube abominations</h3>
+                        </div>
+
+                        <img class="home-img" src="/images/homepage/image-one.png" alt="">
+                    </a>
+                </div>
+            </div>
+
         </div>
-
-        <!-- Page navigation arrows -->
-
-        <a href="#" class="scroll-left">
-            <i class="ri-arrow-left-s-line arrow-L" id="arrow-L-id"></i>
-        </a>
-
-        <a href="#" class="scroll-right">
-            <i class="ri-arrow-right-s-line arrow-R" id="arrow-R-id"></i>
-        </a>
-
-
-
+        
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script> <!-- Jquery -->
-    <script src="/js/horwheel-library/horwheel.js"></script> <!-- Horizontal Mousewheel scroll library https://github.com/pazguille/horwheel-->
+
     
     <!-- Javascript Imports -->
     <script src='js/main.js'></script>
+    <script src='js/MagicScroll.cjs.js'></script>   <!-- Magic SCroll Library -->
 
 </body>
 </html>
