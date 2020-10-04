@@ -247,14 +247,12 @@ header {
 }
 
 .logo-image {
-    /* Logo color in filter because SVG */
-    filter: invert(47%) sepia(56%) saturate(1914%) hue-rotate(337deg) brightness(103%) contrast(101%);
+    fill: #ff6738;
     padding-right: 10px;
 }
 
 .logo-image:hover {
-    /* Logo color in filter because SVG */
-    filter: invert(100%) sepia(0%) saturate(7472%) hue-rotate(114deg) brightness(109%) contrast(97%);
+    fill: whitesmoke;
 }
 
 
@@ -262,14 +260,6 @@ header {
 .header-text {
     color: white;
     line-height: 5px;           /* Removing empty space between name and other text */
-}
-
-.title-text {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: white;
 }
 
 
