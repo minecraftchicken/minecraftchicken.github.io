@@ -1,14 +1,15 @@
 /* ----- Top Level Styles -----*/
 
+
 html {
     -webkit-tap-highlight-color: #ffffff17;     /* For mobile: Color for when user taps an image link or something to replace default blue */
-    
 }
+
 
 body {
     overflow-x: hidden;
 
-    margin: 0px 0px;    /* Remove default margin */
+    margin: 0;    /* Remove default margin */
     /* cursor: none;        Remove cursor */
 
     font-family: Manrope;
@@ -20,7 +21,22 @@ body {
      -ms-animation: fadein 1s; /* Internet Explorer */
       -o-animation: fadein 1s; /* Opera < 12.1 */
          animation: fadein 1s;
+    
+    
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+    
 }
+
+.page-content {
+    flex: 1;
+}
+
+.footer {
+    background-color: yellow;
+}
+
 
 /* Scrollbar styling */
 ::-webkit-scrollbar {
@@ -159,7 +175,7 @@ a, a:visited {
 .menu-items {
     transition: all .33s ease;
     padding: 0;
-    top: 50%;
+    top: 45%;
     width: 100%;
     font-weight: 800;
     list-style: none;
@@ -265,8 +281,6 @@ header {
 
     min-width: 100vw;
     max-width: 100vw;
-
-    height: 100vh;
 
     display: flex;
     flex-wrap: wrap;
@@ -396,6 +410,14 @@ header {
     opacity: 1;
 }
 
+
+/* --- ` --- */
+
+.footer-line {
+    border-top: solid 3px white;
+    width: 90%;
+    height: 10px;
+}
 
 /* Keyframes for cursor animation */
 @keyframes cursorAnim {

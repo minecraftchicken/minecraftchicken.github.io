@@ -28,161 +28,169 @@
     <!-- Cursor Div 
     <div class="cursor" id="cursor-hover"></div> -->
 
-    <!-- Header (Logo Image, Name, Hamburger etc) -->
-    <header>
-        <!-- Hamburger menu when active -->
+<div class="page-content">
 
-        <div id="hamburger-menu">
-            <ul class="menu-items">
-                <li class="menu-items-list">
-                    <a href="#" id="menu-item-hover">About</a></li>
-                <li class="menu-items-list">
-                    <a href="#" id="menu-item-hover">Contact</a></li>
-                <li class="menu-items-list">
-                    <a href="#" id="menu-item-hover">Blog</a></li>
-            </ul>
+        <!-- Header (Logo Image, Name, Hamburger etc) -->
+        <header>
+            <!-- Hamburger menu when active -->
 
-            <!-- Social Icons -->
-            <div class="social-links">
-                <a href="https://twitter.com/Grabstertv" target="_blank"> <i class="ri-twitter-line social-icon"></i> </a>
-                <a href="https://invite.gg/Grabster" target="_blank"><i class="ri-discord-line social-icon"></i> </a>
-                <a href="https://twitch.tv/Grabstetv" target="_blank"> <i class="ri-twitch-fill social-icon"></i> </a>
-                <a href="https://Youtube.com/GrabsterTV" target="_blank"> <i class="ri-youtube-line social-icon"></i> </a>
-                <a href="pickpongpush@gmail.com" target="ma"> <i class="ri-at-line social-icon"></i> </a>
+            <div id="hamburger-menu">
+                <ul class="menu-items">
+                    <li class="menu-items-list">
+                        <a href="#" id="menu-item-hover">About</a></li>
+                    <li class="menu-items-list">
+                        <a href="#" id="menu-item-hover">Contact</a></li>
+                    <li class="menu-items-list">
+                        <a href="#" id="menu-item-hover">Blog</a></li>
+                </ul>
+
+                <!-- Social Icons -->
+                <div class="social-links">
+                    <a href="https://twitter.com/Grabstertv" target="_blank"> <i class="ri-twitter-line social-icon"></i> </a>
+                    <a href="https://invite.gg/Grabster" target="_blank"><i class="ri-discord-line social-icon"></i> </a>
+                    <a href="https://twitch.tv/Grabstetv" target="_blank"> <i class="ri-twitch-fill social-icon"></i> </a>
+                    <a href="https://Youtube.com/GrabsterTV" target="_blank"> <i class="ri-youtube-line social-icon"></i> </a>
+                    <a href="pickpongpush@gmail.com" target="ma"> <i class="ri-at-line social-icon"></i> </a>
+                </div>
+
             </div>
+            <!-- Logo & Text -->
+            <div class="header-fixed">
+                
+                <div class="logo-container">
+                    <a href="#">
+                        <!-- Logo image if SVG isn't used -->
+                        <!-- <img src="./images/logo.svg" alt="Logo" class="logo-image" width="40px" height="40px"> -->
 
-        </div>
-        <!-- Logo & Text -->
-        <div class="header-fixed">
-            
-            <div class="logo-container">
-                <a href="#">
-                    <!-- Logo image if SVG isn't used -->
-                    <!-- <img src="./images/logo.svg" alt="Logo" class="logo-image" width="40px" height="40px"> -->
+                        <!-- SVG logo -->
+                        <svg class="logo-image" width="40px" height="40px" viewBox="0 0 487 564" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M483.127 292.137L409.537 334.742C407.661 335.828 405.345 335.818 403.479 334.715L88.0521 148.348C84.0524 145.985 79 148.868 79 153.514V403.154C79 407.763 83.9799 410.651 87.9798 408.362L163.544 365.124C167.539 362.839 167.579 357.092 163.617 354.751L142.448 342.242C140.621 341.162 139.5 339.198 139.5 337.076V256.062C139.5 251.406 144.573 248.524 148.572 250.909L338.658 364.229C342.607 366.583 342.55 372.32 338.556 374.596L8.97037 562.389C4.97047 564.668 0 561.779 0 557.176V6.51971C0 1.87281 5.05484 -1.01025 9.05451 1.35541L483.175 281.78C487.124 284.116 487.097 289.839 483.127 292.137Z" fill="black"/>
+                        </svg>
 
-                    <!-- SVG logo -->
-                    <svg class="logo-image" width="40px" height="40px" viewBox="0 0 487 564" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M483.127 292.137L409.537 334.742C407.661 335.828 405.345 335.818 403.479 334.715L88.0521 148.348C84.0524 145.985 79 148.868 79 153.514V403.154C79 407.763 83.9799 410.651 87.9798 408.362L163.544 365.124C167.539 362.839 167.579 357.092 163.617 354.751L142.448 342.242C140.621 341.162 139.5 339.198 139.5 337.076V256.062C139.5 251.406 144.573 248.524 148.572 250.909L338.658 364.229C342.607 366.583 342.55 372.32 338.556 374.596L8.97037 562.389C4.97047 564.668 0 561.779 0 557.176V6.51971C0 1.87281 5.05484 -1.01025 9.05451 1.35541L483.175 281.78C487.124 284.116 487.097 289.839 483.127 292.137Z" fill="black"/>
-                    </svg>
+                    </a>
 
-                </a>
-
-                <!-- Header Text -->
-                    <div class="header-text">
-                        <h3 class="myname">Grabster</h3>
-                        <h3 class="motto">Graphic Designer / Content Creator</h3>
+                    <!-- Header Text -->
+                        <div class="header-text">
+                            <h3 class="myname">Grabster</h3>
+                            <h3 class="motto">Graphic Designer / Content Creator</h3>
+                        </div>
+                    <!-- Hamburger icon animated -->
+                    <div class="hamburger" id="hamburger-hover" onclick="myFunction(this); document.getElementById('hamburger-menu').classList.toggle('hamburger-active');">
+                        <div class="bar1"></div>
+                        <div class="bar3"></div>
                     </div>
-                <!-- Hamburger icon animated -->
-                <div class="hamburger" id="hamburger-hover" onclick="myFunction(this); document.getElementById('hamburger-menu').classList.toggle('hamburger-active');">
-                    <div class="bar1"></div>
-                    <div class="bar3"></div>
+
                 </div>
 
             </div>
+        </header>
 
-        </div>
-    </header>
+        <!-- Page elements -->
+        <main>
 
-    <!-- Page elements -->
-    <main>
+            <div class="parent-sec-container">
 
-        <div class="parent-sec-container">
+                <div class="child-sec-container">
+                    <div class="g-child-sec-container">
 
-            <div class="child-sec-container">
-                <div class="g-child-sec-container">
+                        <a href="#" id="link-1">
 
-                    <a href="#" id="link-1">
+                            <div class="text-container">
+                                <h1 class="sec-title">Portfolio</h1>
+                                <h3 class="sec-description">Let design speak for itself.</h3>
+                            </div>
 
-                        <div class="text-container">
-                            <h1 class="sec-title">Portfolio</h1>
-                            <h3 class="sec-description">Let design speak for itself.</h3>
-                        </div>
+                            <img class="home-img" src="/images/homepage/image-one.png" alt="">
+                        </a>
+                    </div>
 
-                        <img class="home-img" src="/images/homepage/image-one.png" alt="">
-                    </a>
+                </div>
+
+                <div class="child-sec-container">
+                    <div class="g-child-sec-container">
+
+                        <a href="#" id="link-2">
+
+                            <div class="text-container">
+                                <h1 class="sec-title">Apps</h1>
+                                <h3 class="sec-description">Making phones look pretty.</h3>
+                            </div>
+
+                            <img class="home-img" src="/images/homepage/image-two.jpg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="child-sec-container">
+                    <div class="g-child-sec-container">
+
+                        <a href="#" id="link-3">
+
+                            <div class="text-container">
+                                <h1 class="sec-title">Store</h1>
+                                <h3 class="sec-description">Pay less for bigger value.</h3>
+                            </div>
+
+                            <img class="home-img" src="/images/homepage/image-three.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="child-sec-container">
+                    <div class="g-child-sec-container">
+
+                        <a href="#" id="link-4">
+
+                            <div class="text-container">
+                                <h1 class="sec-title">YouTube</h1>
+                                <h3 class="sec-description">Where I educate & entertain.</h3>
+                            </div>
+
+                            <img class="home-img" src="/images/homepage/image-four.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="child-sec-container">
+                    <div class="g-child-sec-container">
+
+                        <a href="#" id="link-5">
+
+                            <div class="text-container">
+                                <h1 class="sec-title">Tasker Projects</h1>
+                                <h3 class="sec-description">Making your life easier</h3>
+                            </div>
+
+                            <img class="home-img" src="/images/homepage/image-five.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="child-sec-container">
+                    <div class="g-child-sec-container">
+
+                        <a href="#" id="link-6">
+
+                            <div class="text-container">
+                                <h1 class="sec-title">3D Renders</h1>
+                                <h3 class="sec-description">Default cube abominations</h3>
+                            </div>
+
+                            <img class="home-img" src="/images/homepage/image-one.png" alt="">
+                        </a>
+                    </div>
                 </div>
 
             </div>
+        </main>
 
-            <div class="child-sec-container">
-                <div class="g-child-sec-container">
+   
+</div> <!-- page-content div ends-->
 
-                    <a href="#" id="link-2">
-
-                        <div class="text-container">
-                            <h1 class="sec-title">Apps</h1>
-                            <h3 class="sec-description">Making phones look pretty.</h3>
-                        </div>
-
-                        <img class="home-img" src="/images/homepage/image-two.jpg" alt="">
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="child-sec-container">
-                <div class="g-child-sec-container">
-
-                    <a href="#" id="link-3">
-
-                        <div class="text-container">
-                            <h1 class="sec-title">Store</h1>
-                            <h3 class="sec-description">Pay less for bigger value.</h3>
-                        </div>
-
-                        <img class="home-img" src="/images/homepage/image-three.jpg" alt="">
-                    </a>
-                </div>
-            </div>
-
-            <div class="child-sec-container">
-                <div class="g-child-sec-container">
-
-                    <a href="#" id="link-4">
-
-                        <div class="text-container">
-                            <h1 class="sec-title">YouTube</h1>
-                            <h3 class="sec-description">Where I educate & entertain.</h3>
-                        </div>
-
-                        <img class="home-img" src="/images/homepage/image-four.jpg" alt="">
-                    </a>
-                </div>
-            </div>
-
-            <div class="child-sec-container">
-                <div class="g-child-sec-container">
-
-                    <a href="#" id="link-5">
-
-                        <div class="text-container">
-                            <h1 class="sec-title">Tasker Projects</h1>
-                            <h3 class="sec-description">Making your life easier</h3>
-                        </div>
-
-                        <img class="home-img" src="/images/homepage/image-five.jpg" alt="">
-                    </a>
-                </div>
-            </div>
-
-            <div class="child-sec-container">
-                <div class="g-child-sec-container">
-
-                    <a href="#" id="link-6">
-
-                        <div class="text-container">
-                            <h1 class="sec-title">3D Renders</h1>
-                            <h3 class="sec-description">Default cube abominations</h3>
-                        </div>
-
-                        <img class="home-img" src="/images/homepage/image-one.png" alt="">
-                    </a>
-                </div>
-            </div>
-
-        </div>
-        
-    </main>
+    <footer class="footer">
+        <div class="footer-line"></div>
+    </footer>
 
 
     
