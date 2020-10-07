@@ -1,0 +1,28 @@
+.page-name {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.prev-page-name {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.header-text {
+    line-height: 1px;
+}
+
+/* --- Mobile Responsive --- */
+
+@media only screen and (max-width: 720px) {
+    .prev-page-name {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 800;
+    }
+    /* Making header name disappear */
+    .page-name {
+        font-size: 0px;
+        visibility: hidden;
+    }
+}

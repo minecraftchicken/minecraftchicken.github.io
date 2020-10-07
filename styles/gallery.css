@@ -1,0 +1,143 @@
+/* Class of section texts in child containers */
+
+.gallery-text-container {
+    position: absolute;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    bottom: -25px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.gallery-image-title, .sec-description {
+    color: whitesmoke;
+}
+
+.gallery-image-title {
+    font-size: 26px;
+    margin-bottom: 0px;
+    transform: translateY(-30px);
+    transition: all .33s ease;
+    opacity: 0;
+}
+
+/* ----- HOME LINKS HOVER ----- */
+
+#link-1:hover .gallery-image-title {
+    transform: translateY(-40px);
+    transition: all .33s ease;
+    opacity: 1;
+}
+
+#link-2:hover .gallery-image-title {
+    transform: translateY(-40px);
+    transition: all .33s ease;
+    opacity: 1;
+}
+
+#link-3:hover .gallery-image-title {
+    transform: translateY(-40px);
+    transition: all .33s ease;
+    opacity: 1;
+}
+
+#link-4:hover .gallery-image-title {
+    transform: translateY(-40px);
+    transition: all .33s ease;
+    opacity: 1;
+}
+
+#link-5:hover .gallery-image-title {
+    transform: translateY(-40px);
+    transition: all .33s ease;
+    opacity: 1;
+}
+
+#link-6:hover .gallery-image-title {
+    transform: translateY(-40px);
+    transition: all .33s ease;
+    opacity: 1;
+}
+
+#link-7:hover .gallery-image-title {
+    transform: translateY(-40px);
+    transition: all .33s ease;
+    opacity: 1;
+}
+
+/* --- Gallery content container --- */
+
+.child-gallery-container {
+    width: 22%;
+    margin: 10px 10px;
+    z-index: 1;
+}
+
+.gallery-content-container {
+    height: 600px;
+    position: relative;
+}
+
+
+/* --- Class of images in child containers --- */
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.33s ease;
+}
+
+.gallery-image:hover {
+    /* After state for hover */
+    transition: all 0.33s ease;
+    -webkit-filter: brightness(0.6);
+    filter: brightness(0.5);
+    /* duplicated for some browsers */
+}
+
+
+/* --- Tablet Responsive --- */
+
+@media only screen and (max-width: 1080px) {
+
+    /* Child section container */
+    .child-gallery-container {
+        width: 30%;
+        margin: 10px 10px;
+    }
+    
+    /* Responsive text size */
+    .gallery-image-title {
+        font-size: 25px;
+    }
+    /* Class of section texts in child containers */
+    .gallery-text-container {
+        margin-left: 15px;
+    }
+
+    /* ----- HOME LINKS HOVER TABLET ----- */
+
+    #link-1:hover .sec-title {
+        transform: translateY(-20px);
+        transition: all .33s ease;
+    }
+}
+
+
+/* --- Mobile Responsive --- */
+
+@media only screen and (max-width: 720px) {
+    /* Child section container */
+    .child-gallery-container {
+        width: 45%;
+        margin: 5px 5px;
+    }
+    }
+    
+    /* ----- HOME LINKS HOVER MOBILE ----- */
+    #link-1:hover .sec-title {
+        transform: translateY(-20px);
+        transition: all .33s ease;
+    }
+}
