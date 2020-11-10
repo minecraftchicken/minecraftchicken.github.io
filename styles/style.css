@@ -9,8 +9,10 @@ body {
     overflow-x: hidden;
     margin: 0;
     /* Remove default margin */
+
+    /* Remove cursor 
     cursor: none;
-    /* Remove cursor */
+    */
     font-family: Manrope;
     background-color: black;
     /* For page load animation */
@@ -86,6 +88,8 @@ body {
     background-color: #ff6639;
 }
 
+/* Cursor 
+
 .cursor {
     z-index: 3;
     margin: 0;
@@ -95,8 +99,8 @@ body {
     border: 3px solid rgba(255, 255, 255, 0.644);
     border-radius: 50%;
     position: absolute;
-    transition-timing-function: ease;
-    animation: cursorAnim 1s infinite alternate;
+    transition-timing-function: ease-in-out;
+    animation: cursorAnim 1.5s infinite alternate;
     pointer-events: none;
 }
 
@@ -104,12 +108,14 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+*/
+
 a, a:visited {
     transition: all 0.33s ease;
     color: white;
     text-decoration: none;
-    cursor: none;
-    /* Remove cursor */
+    /* Remove cursor 
+    cursor: none;*/
 }
 
 /* Text Selection color */
@@ -235,8 +241,8 @@ a, a:visited {
 .menu-items-list, a:hover {
     transition: color 0.33s ease;
     color: #ff6738;
-    cursor: none;
-    /* Remove cursor */
+    /* Remove cursor 
+    cursor: none;*/
 }
 
 /* Social Icons */
@@ -484,11 +490,12 @@ header {
 /* --- Tablet Responsive --- */
 
 @media only screen and (max-width: 1080px) {
+    /*
     .cursor {
         width: 0;
         height: 0;
         visibility: hidden;
-    }
+    }*/
     .banner {
         font-size: 14px;
     }
@@ -621,7 +628,7 @@ header {
     }
     /* Brings cursor back */
     html, a, body, a:visited, .menu-items-list, a:hover {
-        cursor: auto;
+        /* cursor: auto; */
     }
     /* List item size change */
     .menu-items-list {
