@@ -78,7 +78,6 @@
     position: relative;
 }
 
-
 /* --- Class of images in child containers --- */
 
 .gallery-image {
@@ -96,17 +95,112 @@
     /* duplicated for some browsers */
 }
 
+/* End of page call to action */
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+    padding-top: 50px;
+}
+
+.cta-h1 {
+    margin: 0 auto;
+    font-size: 32px;
+}
+
+.cta-h3 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+}
+
+.cta-chat-text {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.cta-line {
+    width: 60%;
+    border-top: solid 2px rgba(245, 245, 245, 0.233);
+}
+
+/* CTA buttons */
+
+.cta-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.cta-button-1, .cta-button-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: none;
+    color: whitesmoke;
+    border: none;
+    font-size: 13px;
+    width: 185px;
+    height: 45px;
+    font-family: Manrope;
+}
+
+.cta-button-1 {
+    transition: all 0.33s ease;
+    background-color: #24acf2;
+    border: solid 2px #24acf2;
+}
+
+.cta-button-1:hover {
+    border: solid 2px #24acf2;
+    background-color: #24acf257;
+}
+
+.cta-button-2 {
+    transition: all 0.33s ease;
+    border: solid 2px #566fff;
+    background-color: #566fff;
+}
+
+.cta-button-2:hover {
+    background-color: #566fff5c;
+}
+
+.cta-icon-1, .cta-icon-2 {
+    padding-right: 5px;
+}
+
+.cta-icon-1 {
+    font-size: 18px;
+}
+
+.cta-icon-2 {
+    font-size: 16px;
+}
 
 /* --- Tablet Responsive --- */
 
 @media only screen and (max-width: 1080px) {
-
+    .gallery-content-container {
+        height: 500px;
+        position: relative;
+    }
     /* Child section container */
     .child-gallery-container {
         width: 30%;
         margin: 10px 10px;
     }
-    
     /* Responsive text size */
     .gallery-image-title {
         font-size: 25px;
@@ -115,15 +209,15 @@
     .gallery-text-container {
         margin-left: 15px;
     }
-
-    /* ----- HOME LINKS HOVER TABLET ----- */
-
-    #link-1:hover .sec-title {
-        transform: translateY(-20px);
+    /* ----- Keeping Image Titles Static ----- */
+    .gallery-image-title {
+        font-size: 26px;
+        margin-bottom: 0px;
+        transform: translateY(-30px);
         transition: all .33s ease;
+        opacity: 1;
     }
 }
-
 
 /* --- Mobile Responsive --- */
 
@@ -133,8 +227,6 @@
         width: 45%;
         margin: 5px 5px;
     }
-    }
-    
     /* ----- HOME LINKS HOVER MOBILE ----- */
     #link-1:hover .sec-title {
         transform: translateY(-20px);

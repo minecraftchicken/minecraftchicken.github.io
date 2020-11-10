@@ -1,0 +1,150 @@
+.apps-container {
+    margin: 100px 3% 50px;
+}
+
+.app-thumbnail {
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.app-item-container {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.app-text {
+    color: whitesmoke;
+    margin-left: 35px;
+}
+
+.cta-button-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.cta-button-1, .cta-button-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+    color: whitesmoke;
+    border: none;
+    font-size: 13px;
+    width: 160px;
+    height: 45px;
+    font-family: Manrope;
+}
+
+.cta-button-1 {
+    transition: all 0.33s ease;
+    background-color: #2471f2;
+    border: solid 2px #2471f2;
+}
+
+#button-2 {
+    padding-left: 15px;
+}
+
+.cta-button-1:hover {
+    border: solid 2px #2471f2;
+    background-color: #2471f257;
+}
+
+.cta-button-2 {
+    transition: all 0.33s ease;
+    border: solid 2px #5695ff;
+    background-color: #5695ff;
+}
+
+.cta-button-2:hover {
+    background-color: #5695ff5c;
+}
+
+.cta-icon-1, .cta-icon-2 {
+    padding-right: 5px;
+}
+
+.cta-icon-1 {
+    font-size: 18px;
+}
+
+.cta-icon-2 {
+    font-size: 16px;
+}
+
+/* Other Styles */
+
+.app-title {
+    margin: 0;
+}
+
+.app-description {
+    line-height: 25px;
+}
+
+
+/* --- Tablet respinsive --- */
+
+@media only screen and (max-width: 1080px) {
+
+    .app-item-container {
+        flex-direction: column;
+    }
+    
+    .app-thumbnail {
+        width: 95%;
+        height: 250px;
+    }
+
+    .app-text {
+        color: whitesmoke;
+        margin: 6% 3%;
+    }
+
+}
+
+/* --- Mobile respinsive --- */
+
+@media only screen and (max-width: 720px) {
+
+    /* Buttons */
+
+    .cta-button-container {
+        width: 100%;
+    }
+
+    .cta-button-1, .cta-button-2 {
+        font-size: 10px;
+        width: 100%;
+        height: 45px;
+    }
+
+    #button-1 {
+        width: 100%;
+    }
+
+    #button-2 {
+        width: 100%;
+        padding-left: 8px;
+    }    
+    
+    .app-thumbnail {
+        width: 96%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    /* Text Size */
+
+    .app-title {
+        font-size: 22px;
+    }
+
+    .app-description {
+        font-size: 14px;
+    }
+
+}

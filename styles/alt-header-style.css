@@ -1,3 +1,4 @@
+
 .page-name {
     font-size: 16px;
     font-weight: 400;
@@ -5,7 +6,7 @@
 
 .prev-page-name {
     font-weight: 800;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .header-text {
@@ -17,7 +18,7 @@
 @media only screen and (max-width: 720px) {
     .prev-page-name {
         text-align: center;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 800;
     }
     /* Making header name disappear */
