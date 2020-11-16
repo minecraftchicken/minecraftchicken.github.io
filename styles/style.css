@@ -143,12 +143,6 @@ a, a:visited {
     font-size: 15px;
 }
 
-.back-arrow {    
-    position: relative;
-    bottom: 1px;
-    font-size: 10px;
-}
-
 /* ----- Desktop header links ----- */
 
 .header-links-container {

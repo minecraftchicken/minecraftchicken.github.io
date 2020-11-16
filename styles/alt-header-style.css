@@ -13,6 +13,11 @@
     line-height: 1px;
 }
 
+.back-arrow {    
+    position: relative;
+    font-size: 10px;
+}
+
 /* --- Mobile Responsive --- */
 
 @media only screen and (max-width: 720px) {
