@@ -358,10 +358,7 @@
         transform: translateY(-20px);
         transition: all .33s ease;
     }
-    /* --- Full screen image --- */
-    #fscreen-img1, #fscreen-img2, #fscreen-img3, #fscreen-img4, #fscreen-img5, #fscreen-img6, #fscreen-img7, #fscreen-img8, #fscreen-img8 {
-        flex-direction: column;
-    }
+
     /* image title & description container */
     .image-info-container {
         margin-left: 0;
@@ -378,11 +375,17 @@
     }
     /* image styling */
     .full-image {
-        position: relative;
+        position: absolute;
         display: flex;
         object-fit: cover;
-        width: 90vw;
-        height: 30vh;
+        width: 100vw;
+        height: 100vh;
+        
+        /* After state for hover */
+        transition: all 0.33s ease;
+        -webkit-filter: brightness(0.3);
+        filter: brightness(0.3);
+        /* duplicated for some browsers */
     }
     /* color palette */
     .palette-container {
