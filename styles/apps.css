@@ -6,6 +6,13 @@
     width: 500px;
     height: 250px;
     object-fit: cover;
+    transition: all 0.33s ease;
+}
+
+.app-thumbnail:hover {
+    transition: all 0.33s ease;
+    -webkit-filter: brightness(0.8);
+    filter: brightness(0.8);
 }
 
 .app-item-container {
@@ -33,10 +40,14 @@
     color: whitesmoke;
     border: none;
     font-size: 13px;
-    width: 160px;
-    height: 43px;
+    width: 150px;
+    height: 40px;
     font-family: Manrope;
-    border-radius: 100px;
+    /* border-radius: 100px; */
+}
+
+.cta-button-1:hover, .cta-button-2:hover {
+    cursor: pointer;
 }
 
 .cta-button-1 {
@@ -65,7 +76,7 @@
 }
 
 .cta-icon-1, .cta-icon-2 {
-    padding-right: 5px;
+    padding-right: 6px;
 }
 
 .cta-icon-1 {
@@ -85,20 +96,20 @@
 
 .title-type-container {
     display: flex;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 /* App Type Container Styling */
 
 .app-type-klwp, .app-type-kwgt, .app-type-icon-pack {
     width: 70px;
-    height: 25px;
+    height: 23px;
     margin-left: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 100px;
+    transition: all 0.33s ease;
+    /* border-radius: 100px; */
 }
 
 .app-type-txt {
@@ -126,7 +137,7 @@
     
     .app-thumbnail {
         width: 95%;
-        height: 250px;
+        height: 300px;
     }
 
     .app-text {
@@ -147,7 +158,7 @@
     }
 
     .cta-button-1, .cta-button-2 {
-        font-size: 10px;
+        font-size: 11px;
         width: 100%;
     }
 
@@ -161,8 +172,7 @@
     }    
     
     .app-thumbnail {
-        width: 96%;
-        height: 200px;
+        height: 100%;
         object-fit: cover;
     }
 

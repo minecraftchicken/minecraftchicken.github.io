@@ -9,7 +9,6 @@ body {
     overflow-x: hidden;
     margin: 0;
     /* Remove default margin */
-
     /* Remove cursor 
     cursor: none;
     */
@@ -626,10 +625,10 @@ header {
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-3.5px, -3.5px);
     }
-    /* Brings cursor back */
+    /* Brings cursor back 
     html, a, body, a:visited, .menu-items-list, a:hover {
-        /* cursor: auto; */
-    }
+         cursor: auto; 
+    }*/
     /* List item size change */
     .menu-items-list {
         padding: 0px 17px;

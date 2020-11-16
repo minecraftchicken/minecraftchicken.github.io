@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+  <title>404</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/svg" href="/images/logo-colored.svg">
+
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <link rel='stylesheet' type='text/css' href='styles/style.css'>
+
+  <!-- Import CSS tags -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- Remix icons (https://remixicon.com)-->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <!-- Phosphor Icons (https://github.com/phosphor-icons/phosphor-home)-->
+
+  <!-- Import link tags -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+  <!-- CSS normalizer http://nicolasgallagher.com/ -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- 404 Page styling -->
+  <style>
+    .container-404 {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: whitesmoke;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .title-404 {
+      margin-bottom: 0;
+      font-size: 100px;
+      letter-spacing: 30px;
+      padding-left: 25px;
+    }
+
+    .desc-404 {
+      margin-bottom: 15px;
+    }
+
+    .go-back {
+      transition: all 0.33s ease;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .go-back:hover {
+      transition: all 0.33s ease;
+      color: #ff6639;
+      cursor: pointer;
+    }
+
+    .back-container:hover+.rickroll-warn {
+      transition: all 0.33s ease;
+      opacity: 1;
+    }
+
+    .rickroll-warn {
+      transition: all 0.33s ease;
+      pointer-events: none;
+      opacity: 0;
+      margin-top: 10px;
+      color: rgba(245, 245, 245, 0.651);
+    }
+
+    .back-container {
+      display: flex;
+      margin: 0;
+    }
+
+    .link-arrow {
+      font-size: 18px;
+      padding-left: 3px;
+    }
+
+    @media only screen and (max-width: 720px) {
+      .title-404 {
+        font-size: 80px;
+      }
+
+      .desc-404 {
+        margin-top: 10px;
+        font-size: 18px;
+        padding-right: 5%;
+        padding-left: 5%;
+      }
+    }
+  </style>
+
+</head>
+
+<body onload="init()">
+
+  <!-- Cursor Div -->
+  <div class="cursor" id="cursor-hover"></div>
+
+  <div class="page-content">
+
+    <!-- Header (Logo Image, Name, Hamburger etc) -->
+    <header>
+      <!-- Hamburger menu when active -->
+
+      <div id="hamburger-menu">
+        <ul class="menu-items">
+          <li class="menu-items-list">
+            <a href="#" id="menu-item-hover">Aboot</a></li>
+          <li class="menu-items-list">
+            <a href="mailto:GrabsterStudios@gmail.com" id="menu-item-hover">Cotnact</a></li>
+          <li class="menu-items-list">
+            <a href="https://medium.com/@grabstertv" id="menu-item-hover">Glob</a></li>
+        </ul>
+
+        <!-- Social Icons -->
+        <div class="social-links">
+          <a href="https://twitter.com/Grabstertv" target="_blank"> <i class="ph-twitter-logo-light social-icon"></i> </a>
+          <a href="https://invite.gg/Grabster" target="_blank"><i class="ri-discord-line social-icon"></i>
+          </a>
+          <a href="https://twitch.tv/Grabstetv" target="_blank"> <i class="ri-twitch-fill social-icon"></i>
+          </a>
+          <a href="https://Youtube.com/GrabsterTV" target="_blank"> <i class="ph-youtube-logo-light social-icon"></i> </a>
+          <a href="mailto:GrabsterStudios@gmail.com" target="ma"> <i class="ph-envelope-open-light social-icon"></i> </a>
+        </div>
+
+      </div>
+      <!-- Logo & Text -->
+      <div class="header-fixed">
+
+        <div class="logo-container">
+          <a href="index.html">
+            <!-- Logo image if SVG isn't used -->
+            <!-- <img src="./images/logo.svg" alt="Logo" class="logo-image" width="40px" height="40px"> -->
+
+            <!-- SVG logo -->
+            <svg class="logo-image" width="40px" height="40px" viewBox="0 0 487 564" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M483.127 292.137L409.537 334.742C407.661 335.828 405.345 335.818 403.479 334.715L88.0521 148.348C84.0524 145.985 79 148.868 79 153.514V403.154C79 407.763 83.9799 410.651 87.9798 408.362L163.544 365.124C167.539 362.839 167.579 357.092 163.617 354.751L142.448 342.242C140.621 341.162 139.5 339.198 139.5 337.076V256.062C139.5 251.406 144.573 248.524 148.572 250.909L338.658 364.229C342.607 366.583 342.55 372.32 338.556 374.596L8.97037 562.389C4.97047 564.668 0 561.779 0 557.176V6.51971C0 1.87281 5.05484 -1.01025 9.05451 1.35541L483.175 281.78C487.124 284.116 487.097 289.839 483.127 292.137Z" />
+            </svg>
+
+          </a>
+
+          <!-- Header Text -->
+          <div class="header-text">
+            <h3 class="myname">Garbtser</h3>
+            <h3 class="motto">Garfic Degisner \ Toncenc Crtearer</h3>
+          </div>
+          <!-- Hamburger icon animated -->
+          <div class="hamburger" id="hamburger-hover"
+            onclick="myFunction(this); document.getElementById('hamburger-menu').classList.toggle('hamburger-active');">
+            <div class="bar1"></div>
+            <div class="bar3"></div>
+          </div>
+          <!-- Desktop Header Items -->
+          <div class="header-links-container">
+            <ul class="header-links">
+              <li><a href="#">Aboot</a></li>
+              <li><a href="mailto:GrabsterStudios@gmail.com">Cotnact</a></li>
+              <li><a href="https://medium.com/@grabstertv" target="_blank">Glob</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </header>
+
+
+    <main>
+      <div class="container-404">
+        <h1 class="title-404">404</h1>
+        <h3 class="desc-404">Oops! Site just had a stroke searching for this page.</h3>
+
+        <div class="back-container">
+          <p onclick="randomSite();" class="go-back"><a href="javascript:openSite()">Go back home</a></p>
+          <i class="ri-arrow-right-up-line link-arrow"></i>
+        </div>
+
+        <p class="rickroll-warn">Careful! There is a small chance of getting Rick Rolled</p>
+      </div>
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer-line"></div>
+
+      <div class="footer-items">
+        <div>
+          <h3 class="footer-text">
+            Designed & coded with stress & love
+            <br>
+            by <span class="footer-name">Grabster</span>.
+          </h3>
+        </div>
+
+        <div>
+          <a href="mailto:GrabsterStudios@gmail.com" target="ma"> <i class="ph-envelope-open-light social-icon-footer"></i>
+          </a>
+          <a href="https://twitter.com/Grabstertv" target="_blank"> <i
+              class="ph-twitter-logo-light social-icon-footer"></i></a>
+          <a href="https://Youtube.com/GrabsterTV" target="_blank"> <i
+              class="ph-youtube-logo-light social-icon-footer"></i></a>
+        </div>
+      </div>
+
+    </footer>
+
+    <!-- Javascript Imports -->
+    <script src='js/main.js'></script>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+
+      var sites = [
+        'https://www.youtube.com/watch?v=ub82Xb1C8os',
+        'index.html',
+      ];
+
+      function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+      }
+
+    </script>
+</body>
+
+</html>

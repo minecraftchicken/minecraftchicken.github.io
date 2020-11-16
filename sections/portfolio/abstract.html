@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <title>Grabster | Abstract Art</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/svg" href="../../../images/logo-colored.svg">
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel='stylesheet' type='text/css' href='../../../styles/style.css'>
+    <link rel='stylesheet' type='text/css' href='../../../styles/alt-header-style.css'>
+    <link rel='stylesheet' type='text/css' href='../../../styles/gallery.css'>
+
+    <!-- Import CSS tags -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Remix icons (https://remixicon.com)-->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <!-- Phosphor Icons (https://github.com/phosphor-icons/phosphor-home)-->
+
+    <!-- Import link tags -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <!-- CSS normalizer http://nicolasgallagher.com/ -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="init()">
+
+    <!-- Cursor Div -->
+    <div class="cursor" id="cursor-hover"></div>
+
+    <div class="page-content">
+
+        <!-- Header (Logo Image, Name, Hamburger etc) -->
+        <header>
+            <!-- Hamburger menu when active -->
+
+            <div id="hamburger-menu">
+                <ul class="menu-items">
+                    <li class="menu-items-list">
+                        <a href="#" id="menu-item-hover">About</a></li>
+                    <li class="menu-items-list">
+                        <a href="mailto:GrabsterStudios@gmail.com" id="menu-item-hover">Contact</a></li>
+                    <li class="menu-items-list">
+                        <a href="https://medium.com/@grabstertv/" id="menu-item-hover">Blog</a></li>
+                </ul>
+
+                <!-- Social Icons -->
+                <div class="social-links">
+                    <a href="https://twitter.com/Grabstertv" target="_blank"> <i
+                            class="ph-twitter-logo-light social-icon"></i> </a>
+                    <a href="https://invite.gg/Grabster" target="_blank"><i class="ri-discord-line social-icon"></i>
+                    </a>
+                    <a href="https://twitch.tv/Grabstetv" target="_blank"> <i class="ri-twitch-fill social-icon"></i>
+                    </a>
+                    <a href="https://Youtube.com/GrabsterTV" target="_blank"> <i
+                            class="ph-youtube-logo-light social-icon"></i> </a>
+                    <a href="mailto:GrabsterStudios@gmail.com" target="ma"> <i class="ph-envelope-open-light social-icon"></i> </a>
+                </div>
+
+            </div>
+            <!-- Logo & Text -->
+            <div class="header-fixed">
+
+                <div class="logo-container">
+                    <a href="../../../index.html">
+                        <!-- Logo image if SVG isn't used -->
+                        <!-- <img src="./images/logo.svg" alt="Logo" class="logo-image" width="40px" height="40px"> -->
+
+                        <!-- SVG logo -->
+                        <svg class="logo-image" width="40px" height="40px" viewBox="0 0 487 564" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M483.127 292.137L409.537 334.742C407.661 335.828 405.345 335.818 403.479 334.715L88.0521 148.348C84.0524 145.985 79 148.868 79 153.514V403.154C79 407.763 83.9799 410.651 87.9798 408.362L163.544 365.124C167.539 362.839 167.579 357.092 163.617 354.751L142.448 342.242C140.621 341.162 139.5 339.198 139.5 337.076V256.062C139.5 251.406 144.573 248.524 148.572 250.909L338.658 364.229C342.607 366.583 342.55 372.32 338.556 374.596L8.97037 562.389C4.97047 564.668 0 561.779 0 557.176V6.51971C0 1.87281 5.05484 -1.01025 9.05451 1.35541L483.175 281.78C487.124 284.116 487.097 289.839 483.127 292.137Z" />
+                        </svg>
+
+                    </a>
+
+                    <!-- Header Text -->
+                    <div class="header-text">
+                        <h3 class="page-name"><a href="portfolio.html">> Portfolio</a></h3>
+                        <h3 class="prev-page-name">Abstract Art</h3>
+                    </div>
+                    <!-- Hamburger icon animated -->
+                    <div class="hamburger" id="hamburger-hover"
+                        onclick="myFunction(this); document.getElementById('hamburger-menu').classList.toggle('hamburger-active');">
+                        <div class="bar1"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <!-- Desktop Header Items -->
+                    <div class="header-links-container">
+                        <ul class="header-links">
+                            <li><a href="#">About</a></li>
+                            <li><a href="mailto:GrabsterStudios@gmail.com">Contact</a></li>
+                            <li><a href="https://medium.com/@grabstertv" target="_blank">Blog</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+        </header>
+
+        <!-- Important Banner -->
+
+        <div class="banner">
+            <p><span style="color: tomato;">Important Note:</span> Site is currently under construction. All images that
+                aren't digital/renders are from Unsplash.</p>
+        </div>
+
+        <!-- Page elements -->
+        <main>
+
+            <div class="parent-sec-container">
+
+                <!-- Image 1 -->
+                <div class="child-gallery-container">
+                    <div class="gallery-content-container">
+
+                        <a id="link-1"
+                            onclick="fullScreen(this); document.getElementById('fscreen-img1').classList.toggle('fscreen-img1-active');">
+
+                            <div class="gallery-text-container">
+                                <h1 class="gallery-image-title">Lava</h1>
+                            </div>
+
+                            <img class="gallery-image" src="../../../images/portfolio/abstract/abstract (1).jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- -- Image 1 Full -- -->
+                <div id="fscreen-img1">
+
+                    <i class="ph-x-light"
+                        onclick="fullScreen(this); document.getElementById('fscreen-img1').classList.toggle('fscreen-img1-active');"></i>
+
+                    <img class="full-image" src="../../../images/portfolio/abstract/abstract (1).jpg" alt="">
+
+                    <!-- Title & Description -->
+                    <div class="image-info-container">
+                        <h1 class="image-title">
+                            Lava
+                        </h1>
+                        <p class="image-desc">
+                            My very first liquid abstract wallpaper. Designed in Photoshop, using simple raster shapes
+                            in selected color palette and liquifying them in different ways so it resembles lava
+                            liquids.
+                            This wallpaper can be found in <u><a
+                                    href="https://play.google.com/store/apps/details?id=com.reevpro.grabsterstudios">Reev
+                                    Pro</a></u>.
+                        </p>
+
+                        <!-- Color Palette -->
+                        <div class="palette-container">
+                            <div style="
+                        background-color: #f85001;
+                        margin-left: 0;" class="palette-box"></div>
+
+                            <div style="
+                        background-color: #6c7e7e;" class="palette-box"></div>
+
+                            <div style="
+                        background-color: #9b9691;" class="palette-box"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="child-gallery-container">
+                    <div class="gallery-content-container">
+
+                        <a id="link-2"
+                            onclick="fullScreen(this); document.getElementById('fscreen-img2').classList.toggle('fscreen-img2-active');">
+
+                            <div class="gallery-text-container">
+                                <h1 class="gallery-image-title">Metal Lava</h1>
+                            </div>
+
+                            <img class="gallery-image" src="../../../images/portfolio/abstract/Wall_31.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- -- Image 2 Full -- -->
+                <div id="fscreen-img2">
+
+                    <i class="ph-x-light"
+                        onclick="fullScreen(this); document.getElementById('fscreen-img2').classList.toggle('fscreen-img2-active');"></i>
+
+                    <img class="full-image" src="../../../images/portfolio/abstract/Wall_31.png" alt="">
+
+                    <!-- Title & Description -->
+                    <div class="image-info-container">
+                        <h1 class="image-title">
+                            Metal Lava
+                        </h1>
+                        <p class="image-desc">
+                            Metal is hard to resemble when it comes to 2D abstract art. Metal Lava follows the same
+                            liquid idea of the first one (Lava) but this time I used an image to liquify rather than
+                            custom shapes.
+                            Making the process much easier and more fun to experiment with. This wallpaper can be found
+                            in <u><a href="https://play.google.com/store/apps/details?id=com.reevpro.grabsterstudios">Reev
+                                    Pro</a></u>.
+                        </p>
+
+                        <!-- Color Palette -->
+                        <div class="palette-container">
+                            <div style="
+                        background-color: #fdca4d;
+                        margin-left: 0;" class="palette-box"></div>
+
+                            <div style="
+                        background-color: #e7ecec;" class="palette-box"></div>
+
+                            <div style="
+                        background-color: #55767b;" class="palette-box"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="child-gallery-container">
+                    <div class="gallery-content-container">
+
+                        <a id="link-3"
+                            onclick="fullScreen(this); document.getElementById('fscreen-img3').classList.toggle('fscreen-img3-active');">
+
+                            <div class="gallery-text-container">
+                                <h1 class="gallery-image-title">Material 10</h1>
+                            </div>
+
+                            <img class="gallery-image" src="../../../images/portfolio/abstract/abstract (2).jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- -- Image 3 Full -- -->
+                <div id="fscreen-img3">
+
+                    <i class="ph-x-light"
+                        onclick="fullScreen(this); document.getElementById('fscreen-img3').classList.toggle('fscreen-img3-active');"></i>
+
+                    <img class="full-image" src="../../../images/portfolio/abstract/abstract (2).jpg" alt="">
+
+                    <!-- Title & Description -->
+                    <div class="image-info-container">
+                        <h1 class="image-title">
+                            Material 10
+                        </h1>
+                        <p class="image-desc">
+                            Google showcased their new material design wallpapers in their latest Pixel phones lineup in
+                            2020. Inspired, I just could not resist to make my own in a similar design but in a
+                            different frame
+                            and shapes so it looks great on any homescreen. Due to the simplicity of this design, I
+                            easily put multiple variations together in Figma.
+                            This wallpaper can be found in <u><a
+                                    href="https://play.google.com/store/apps/details?id=com.reevpro.grabsterstudios">Reev
+                                    Pro</a></u>.
+                        </p>
+
+                        <!-- Color Palette -->
+                        <div class="palette-container">
+                            <div style="
+                        background-color: #60eac6;
+                        margin-left: 0;" class="palette-box"></div>
+
+                            <div style="
+                        background-color: #61a7ec;" class="palette-box"></div>
+
+                            <div style="
+                        background-color: #ffffff;" class="palette-box"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="child-gallery-container">
+                    <div class="gallery-content-container">
+
+                        <a id="link-4"
+                            onclick="fullScreen(this); document.getElementById('fscreen-img4').classList.toggle('fscreen-img4-active');">
+
+                            <div class="gallery-text-container">
+                                <h1 class="gallery-image-title">Gradjent Blue</h1>
+                            </div>
+
+                            <img class="gallery-image" src="../../../images/portfolio/abstract/abstract (3).jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- -- Image 4 Full -- -->
+                <div id="fscreen-img4">
+
+                    <i class="ph-x-light"
+                        onclick="fullScreen(this); document.getElementById('fscreen-img4').classList.toggle('fscreen-img4-active');"></i>
+
+                    <img class="full-image" src="../../../images/portfolio/abstract/abstract (3).jpg" alt="">
+
+                    <!-- Title & Description -->
+                    <div class="image-info-container">
+                        <h1 class="image-title">
+                            Gradjent Blue
+                        </h1>
+                        <p class="image-desc">
+                            In 2020, I recreated my very first app/theme called Gradjent & served it with 3 brand new
+                            variations of this wallpaper.
+
+                            <br><br>
+                            The idea was to make gradient liquids that defines butter smooth animations of the preset &
+                            gradients which the entire preset is based upon.
+                            All variations of this wallpaper can be found in <u><a
+                                    href="https://play.google.com/store/apps/details?id=com.reevpro.grabsterstudios">Reev
+                                    Pro</a></u>.
+                        </p>
+
+                        <!-- Color Palette -->
+                        <div class="palette-container">
+                            <div style="
+                        background-color: #5c88f3;
+                        margin-left: 0;" class="palette-box"></div>
+
+                            <div style="
+                        background-color: #2b54b5;" class="palette-box"></div>
+
+                            <div style="
+                        background-color: #154f98;" class="palette-box"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Image 5 -->
+                <div class="child-gallery-container">
+                    <div class="gallery-content-container">
+
+                        <a id="link-5"
+                            onclick="fullScreen(this); document.getElementById('fscreen-img5').classList.toggle('fscreen-img5-active');">
+
+                            <div class="gallery-text-container">
+                                <h1 class="gallery-image-title">Blystal Light</h1>
+                            </div>
+
+                            <img class="gallery-image" src="../../../images/portfolio/abstract/abstract (4).jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- -- Image 5 Full -- -->
+                <div id="fscreen-img5">
+
+                    <i class="ph-x-light"
+                        onclick="fullScreen(this); document.getElementById('fscreen-img5').classList.toggle('fscreen-img5-active');"></i>
+
+                    <img class="full-image" src="../../../images/portfolio/abstract/abstract (4).jpg" alt="">
+
+                    <!-- Title & Description -->
+                    <div class="image-info-container">
+                        <h1 class="image-title">
+                            Blystal Light
+                        </h1>
+                        <p class="image-desc">
+                            An experimental design created in Photoshop with the mixer brush tool. "Blystal" is a
+                            combination of "Crystal" and "Blue". I know I'm a true genius. This wallpaper can be found
+                            in <u><a href="https://play.google.com/store/apps/details?id=com.reevpro.grabsterstudios">Reev
+                                    Pro</a></u> with another variation in inverted colors.
+                        </p>
+
+                        <!-- Color Palette -->
+                        <div class="palette-container">
+                            <div style="
+                        background-color: #49a7d7;
+                        margin-left: 0;" class="palette-box"></div>
+
+                            <div style="
+                        background-color: #b1dbd7;" class="palette-box"></div>
+
+                            <div style="
+                        background-color: #dadedd;" class="palette-box"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Image 6 -->
+                <div class="child-gallery-container">
+                    <div class="gallery-content-container">
+
+                        <a id="link-6"
+                            onclick="fullScreen(this); document.getElementById('fscreen-img6').classList.toggle('fscreen-img6-active');">
+
+                            <div class="gallery-text-container">
+                                <h1 class="gallery-image-title">Cyber Motion</h1>
+                            </div>
+
+                            <img class="gallery-image" src="../../../images/portfolio/abstract/cover-abstract.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- -- Image 6 Full -- -->
+                <div id="fscreen-img6">
+
+                    <i class="ph-x-light"
+                        onclick="fullScreen(this); document.getElementById('fscreen-img6').classList.toggle('fscreen-img6-active');"></i>
+
+                    <img class="full-image" src="../../../images/portfolio/abstract/cover-abstract.jpg" alt="">
+
+                    <!-- Title & Description -->
+                    <div class="image-info-container">
+                        <h1 class="image-title">
+                            Cyber Motion
+                        </h1>
+                        <p class="image-desc">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore ipsum a sequi laborum ea ad
+                            voluptate, atque qui, vero delectus ipsa possimus eum aspernatur ut optio sint minima
+                            tempore. Consequatur!
+                        </p>
+
+                        <!-- Color Palette -->
+                        <div class="palette-container">
+                            <div style="
+                        background-color: #576969;
+                        margin-left: 0;" class="palette-box"></div>
+
+                            <div style="
+                        background-color: #15161a;" class="palette-box"></div>
+
+                            <div style="
+                        background-color: #0a0a0a;" class="palette-box"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Image 7 -->
+                <div class="child-gallery-container">
+                    <div class="gallery-content-container">
+
+                        <a id="link-7"
+                            onclick="fullScreen(this); document.getElementById('fscreen-img7').classList.toggle('fscreen-img7-active');">
+
+                            <div class="gallery-text-container">
+                                <h1 class="gallery-image-title">Abstract Neon</h1>
+                            </div>
+
+                            <img class="gallery-image" src="../../../images/portfolio/abstract/abstract (6).jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- -- Image 7 Full -- -->
+                <div id="fscreen-img7">
+
+                    <i class="ph-x-light"
+                        onclick="fullScreen(this); document.getElementById('fscreen-img7').classList.toggle('fscreen-img7-active');"></i>
+
+                    <img class="full-image" src="../../../images/portfolio/abstract/abstract (6).jpg" alt="">
+
+                    <!-- Title & Description -->
+                    <div class="image-info-container">
+                        <h1 class="image-title">
+                            Abstract Neon
+                        </h1>
+                        <p class="image-desc">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore ipsum a sequi laborum ea ad
+                            voluptate, atque qui, vero delectus ipsa possimus eum aspernatur ut optio sint minima
+                            tempore. Consequatur!
+                        </p>
+
+                        <!-- Color Palette -->
+                        <div class="palette-container">
+                            <div style="
+                        background-color: #e24bab;
+                        margin-left: 0;" class="palette-box"></div>
+
+                            <div style="
+                        background-color: #1f3c5a;" class="palette-box"></div>
+
+                            <div style="
+                        background-color: #0f191b;" class="palette-box"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Image 8 -->
+                <div class="child-gallery-container">
+                    <div class="gallery-content-container">
+
+                        <a id="link-8"
+                            onclick="fullScreen(this); document.getElementById('fscreen-img8').classList.toggle('fscreen-img8-active');">
+
+                            <div class="gallery-text-container">
+                                <h1 class="gallery-image-title">Color Blast </h1>
+                            </div>
+
+                            <img class="gallery-image" src="../../../images/portfolio/abstract/wall_20.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- -- Image 8 Full -- -->
+                <div id="fscreen-img8">
+
+                    <i class="ph-x-light"
+                        onclick="fullScreen(this); document.getElementById('fscreen-img8').classList.toggle('fscreen-img8-active');"></i>
+
+                    <img class="full-image" src="../../../images/portfolio/abstract/wall_20.png" alt="">
+
+                    <!-- Title & Description -->
+                    <div class="image-info-container">
+                        <h1 class="image-title">
+                            Color Blast
+                        </h1>
+                        <p class="image-desc">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore ipsum a sequi laborum ea ad
+                            voluptate, atque qui, vero delectus ipsa possimus eum aspernatur ut optio sint minima
+                            tempore. Consequatur!
+                        </p>
+
+                        <!-- Color Palette -->
+                        <div class="palette-container">
+                            <div style="
+                        background-color: #5a30b8;
+                        margin-left: 0;" class="palette-box"></div>
+
+                            <div style="
+                        background-color: #e468d6;" class="palette-box"></div>
+
+                            <div style="
+                        background-color: #fed794;" class="palette-box"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- End of page CTA-->
+
+                <section class="cta-container">
+                    <h1 class="cta-h1">Need something similar?</h1>
+                    <div class="cta-chat-text">
+                        <div class="cta-line"></div>
+                        <h3 class="cta-h3">Let's chat!</h3>
+                        <div class="cta-line"></div>
+                    </div>
+                    <div class="cta-button-container">
+                        <a href="https://twitter.com/messages/compose?text=&recipient_id=798214168495214592"
+                            target="_blank"><button class="cta-button-1"> <i class="ph-twitter-logo-light cta-icon-1"></i>DM
+                                on Twitter</button></a>
+                        <a href="mailto:GrabsterStudios@gmail.com"><button class="cta-button-2"><i
+                                    class="ph-envelope-open-light cta-icon-2"></i>Send an Email</button></a>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+
+    </div> <!-- page-content div ends-->
+
+    <footer class="footer">
+        <div class="footer-line"></div>
+
+        <div class="footer-items">
+            <div>
+                <h3 class="footer-text">
+                    Designed & coded with stress & love
+                    <br>
+                    by <span class="footer-name">Grabster</span>.
+                </h3>
+            </div>
+
+            <div>
+                <a href="mailto:GrabsterStudios@gmail.com" target="ma"> <i class="ph-envelope-open-light social-icon-footer"></i>
+                </a>
+                <a href="https://twitter.com/Grabstertv" target="_blank"> <i
+                        class="ph-twitter-logo-light social-icon-footer"></i>
+                </a>
+                <a href="https://Youtube.com/GrabsterTV" target="_blank"> <i
+                        class="ph-youtube-logo-light social-icon-footer"></i>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <!-- Javascript Imports -->
+    <script src='../../../js/main.js'></script>
+    <script src='../../../js/MagicScroll.cjs.js'></script> <!-- Magic SCroll Library -->
+
+</body>
+
+</html>
