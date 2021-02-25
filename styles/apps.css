@@ -1,189 +1,89 @@
-.apps-container {
-    margin: 100px 3% 50px;
+/* Apps & Themes page */
+
+.page-title-container.section-2 {
+    padding-top: 0;
 }
 
-.app-thumbnail {
-    width: 500px;
-    height: 250px;
-    object-fit: cover;
-    transition: all 0.33s ease;
+.page-title-container.section-2 .page-title {
+    margin-bottom: 7px;
 }
 
-.app-thumbnail:hover {
-    transition: all 0.33s ease;
-    -webkit-filter: brightness(0.8);
-    filter: brightness(0.8);
+#long-desc {
+    font-size: medium;
+    font-weight: 450;
+    width: 95%;
+    padding-top: 10px;
 }
 
-.app-item-container {
-    margin-top: 35px;
+.app-type {
+    width: 95%;
     display: flex;
-    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex: start;
+    overflow: hidden;
+    padding:7px 0;
 }
 
-.app-text {
-    color: whitesmoke;
-    margin-left: 35px;
+.app-type p {
+    font-size: small;
+    padding: 0 13px;
 }
 
-.cta-button-container {
-    margin-top: 25px;
+#first-apptype {
+    padding-left: 0;
+}
+
+
+/* Button */
+
+.buttons-container {
+    width: 95%;
     display: flex;
-    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding:7px 0;
 }
 
-.cta-button-1, .cta-button-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* cursor: none; */
-    color: whitesmoke;
-    border: none;
-    font-size: 13px;
-    width: 150px;
-    height: 40px;
-    font-family: Manrope;
-    /* border-radius: 100px; */
-}
-
-.cta-button-1:hover, .cta-button-2:hover {
+.download-button {
+    width: fit-content;
+    height: 36px;
+    padding: 0 25px;
+    margin: 0 5px 0 0;
+    border: 0;
+    background-color: #ff6738;
+    border-radius: 4px;
+    color: #fcfcfc;
+    font-size: small;
     cursor: pointer;
+    transition: all .2s ease;
 }
 
-.cta-button-1 {
-    transition: all 0.33s ease;
-    background-color: #2471f2;
-    border: solid 2px #2471f2;
+.download-button:hover {
+    background-color: #ff835e;
+    transition: all .2s ease;
 }
 
-#button-2 {
-    padding-left: 15px;
+.secondary-button {
+    width: fit-content;
+    height: 36px;
+    padding: 0 22px;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px #ff774e;
+    border-radius: 4px;
+    color: #ff774e;
+    font-size: small;
+    cursor: pointer;
+    transition: all .2s ease;
 }
 
-.cta-button-1:hover {
-    border: solid 2px #2471f2;
-    background-color: #2471f257;
+.secondary-button:hover {
+    background-color: #ff774e23;
+    transition: all .2s ease;
 }
 
-.cta-button-2 {
-    transition: all 0.33s ease;
-    border: solid 2px #5695ff;
-    background-color: #5695ff;
-}
-
-.cta-button-2:hover {
-    background-color: #5695ff5c;
-}
-
-.cta-icon-1, .cta-icon-2 {
-    padding-right: 6px;
-}
-
-.cta-icon-1 {
-    font-size: 18px;
-}
-
-.cta-icon-2 {
-    font-size: 16px;
-}
-
-/* Other Styles */
-
-.app-description {
-    line-height: 25px;
-    margin-top: -5px;
-}
-
-.title-type-container {
-    display: flex;
-    align-items: center; 
-}
-
-/* App Type Container Styling */
-
-.app-type-klwp, .app-type-kwgt, .app-type-icon-pack {
-    width: 70px;
-    height: 23px;
-    margin-left: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.33s ease;
-    /* border-radius: 100px; */
-}
-
-.app-type-txt {
-    font-size: 10px;
-    font-weight: 600;
-}
-
-/* App Type Colors */
-
-.app-type-klwp {
-    background-color: #c43149;
-}
-
-.app-type-kwgt {
-    background-color: #4382c5;
-}
-
-/* --- Tablet respinsive --- */
-
-@media only screen and (max-width: 1080px) {
-
-    .app-item-container {
-        flex-direction: column;
-    }
-    
-    .app-thumbnail {
-        width: 95%;
-        height: 300px;
-    }
-
-    .app-text {
-        color: whitesmoke;
-        margin: 6% 3%;
-    }
-
-}
-
-/* --- Mobile respinsive --- */
-
-@media only screen and (max-width: 720px) {
-
-    /* Buttons */
-
-    .cta-button-container {
-        width: 100%;
-    }
-
-    .cta-button-1, .cta-button-2 {
-        font-size: 11px;
-        width: 100%;
-    }
-
-    #button-1 {
-        width: 100%;
-    }
-
-    #button-2 {
-        width: 100%;
-        padding-left: 8px;
-    }    
-    
-    .app-thumbnail {
-        height: 100%;
-        object-fit: cover;
-    }
-
-    /* Text Size */
-
-    .app-title {
-        font-size: 25px;
-    }
-
-    .app-description {
-        font-size: 14px;
-    }
-
+#winner-text {
+    font-size: small;
 }

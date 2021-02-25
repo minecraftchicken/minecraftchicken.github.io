@@ -1,240 +1,270 @@
-<!DOCTYPE html>
-<html>
-
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-
-  <title>404</title>
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/svg" href="/images/logo-colored.svg">
-
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-
-  <link rel='stylesheet' type='text/css' href='styles/style.css'>
-
-  <!-- Import CSS tags -->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-  <!-- Remix icons (https://remixicon.com)-->
+    <title>Grabster — 404</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/logo.png" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Favicon -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Phosphor Icons -->
     <script src="https://unpkg.com/phosphor-icons"></script>
-    <!-- Phosphor Icons (https://github.com/phosphor-icons/phosphor-home)-->
+    <!-- Javascript -->
+    <script src="js/javascript.js"></script>
 
-  <!-- Import link tags -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-  <!-- CSS normalizer http://nicolasgallagher.com/ -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 
-  <!-- 404 Page styling -->
-  <style>
-    .container-404 {
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: whitesmoke;
-      text-align: center;
-      justify-content: center;
-    }
+    <style>
+        
+        .center-text {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
 
-    .title-404 {
-      margin-bottom: 0;
-      font-size: 100px;
-      letter-spacing: 30px;
-      padding-left: 25px;
-    }
+        .page-title {
+            display: flex;
+            align-content: center;
+        }
+        .page-title h1 {
+            margin: 0;
+        }
 
-    .desc-404 {
-      margin-bottom: 15px;
-    }
+        #sad-icon {
+            width: 35px;
+            padding-right: 15px;
+        }
+        #sad-icon-fill {
+            fill: var(--color-primary);
+        }
+        #sad-icon-stroke {
+            stroke: var(--color-primary);
+        }
 
-    .go-back {
-      transition: all 0.33s ease;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
+        h3 {
+            margin: 0;
+            margin-top: 10px;
+            font-weight: 400;
+            color: var(--color-secondary);
+        }
 
-    .go-back:hover {
-      transition: all 0.33s ease;
-      color: #ff6639;
-      cursor: pointer;
-    }
+        .bored-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
 
-    .back-container:hover+.rickroll-warn {
-      transition: all 0.33s ease;
-      opacity: 1;
-    }
+        .bored-container h3 {
+            font-size: small;
+            padding-bottom: 13px;
+        }
 
-    .rickroll-warn {
-      transition: all 0.33s ease;
-      pointer-events: none;
-      opacity: 0;
-      margin-top: 10px;
-      color: rgba(245, 245, 245, 0.651);
-    }
+        .bored-button {
+            width: fit-content;
+            height: 36px;
+            padding: 0 15px;
+            background-color: rgba(0, 0, 0, 0);
+            border: solid 1px var(--color-secondary);
+            border-radius: 4px;
+            color: var(--color-secondary);
+            font-size: small;
+            cursor: pointer;
+        }
 
-    .back-container {
-      display: flex;
-      margin: 0;
-    }
+        /* ripple effect */
+        [ripple] {
+            position: relative;
+            overflow: hidden;
+            }
+            [ripple] .ripple--container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            }
+            [ripple] .ripple--container span {
+            transform: scale(0);
+            border-radius: 100%;
+            position: absolute;
+            opacity: 0.75;
+            background-color: var(--color-secondary);
+            animation: ripple 700ms;
+            }
+        @-moz-keyframes ripple {
+            to {
+                opacity: 0;
+                transform: scale(2);
+            }
+            }
+        @-webkit-keyframes ripple {
+            to {
+                opacity: 0;
+                transform: scale(2);
+            }
+            }
+        @-o-keyframes ripple {
+            to {
+                opacity: 0;
+                transform: scale(2);
+            }
+            }
+        @keyframes ripple {
+            to {
+                opacity: 0;
+                transform: scale(2);
+            }
+            }
 
-    .link-arrow {
-      font-size: 18px;
-      padding-left: 3px;
-    }
+        /* --- Mobile --- */
 
-    @media only screen and (max-width: 720px) {
-      .title-404 {
-        font-size: 80px;
-      }
+        @media screen and (max-width: 600px) {
+            .page-title h1 {
+                font-size: x-large;
+            }
+            #sad-icon {
+                width: 25px;
+            }
+        }
 
-      .desc-404 {
-        margin-top: 10px;
-        font-size: 18px;
-        padding-right: 5%;
-        padding-left: 5%;
-      }
-    }
-  </style>
-
+    </style>
 </head>
 
-<body onload="init()">
 
-  <!-- Cursor Div -->
-  <div class="cursor" id="cursor-hover"></div>
-
-  <div class="page-content">
-
-    <!-- Header (Logo Image, Name, Hamburger etc) -->
+<body>
     <header>
-      <!-- Hamburger menu when active -->
+        <div class="header-container">
+            <a href="index.html">
+                <div class="brand-container">
+                    <img class="logo-svg" src="images/logo-vector.svg" alt="Grabster Logo">
+                    <h2 class="name">Grabster</h2>
+                </div>
+            </a>
 
-      <div id="hamburger-menu">
-        <ul class="menu-items">
-          <li class="menu-items-list">
-            <a href="#" id="menu-item-hover">Aboot</a></li>
-          <li class="menu-items-list">
-            <a href="mailto:GrabsterStudios@gmail.com" id="menu-item-hover">Cotnact</a></li>
-          <li class="menu-items-list">
-            <a href="https://medium.com/@grabstertv" id="menu-item-hover">Glob</a></li>
-        </ul>
+            <div class="nav-container">
+                <ul class="nav-list">
+                    <li><a href="">Apps</a></li>
+                    <li><a href="">Store</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
 
-        <!-- Social Icons -->
-        <div class="social-links">
-          <a href="https://twitter.com/Grabstertv" target="_blank"> <i class="ph-twitter-logo-light social-icon"></i> </a>
-          <a href="https://invite.gg/Grabster" target="_blank"><i class="ri-discord-line social-icon"></i>
-          </a>
-          <a href="https://twitch.tv/Grabstetv" target="_blank"> <i class="ri-twitch-fill social-icon"></i>
-          </a>
-          <a href="https://Youtube.com/GrabsterTV" target="_blank"> <i class="ph-youtube-logo-light social-icon"></i> </a>
-          <a href="mailto:GrabsterStudios@gmail.com" target="ma"> <i class="ph-envelope-open-light social-icon"></i> </a>
+                    <li><span id="divider-line">|</span></li>
+
+                    <div>
+                        <a><i onclick="toggleTheme('dark')" class="light-icon ph-moon-stars-fill"></i></a>
+                        <a><i onclick="toggleTheme('light')" class="dark-icon ph-sun-fill"></i></a>
+                    </div>
+                </ul>
+            </div>
         </div>
-
-      </div>
-      <!-- Logo & Text -->
-      <div class="header-fixed">
-
-        <div class="logo-container">
-          <a href="index.html">
-            <!-- Logo image if SVG isn't used -->
-            <!-- <img src="./images/logo.svg" alt="Logo" class="logo-image" width="40px" height="40px"> -->
-
-            <!-- SVG logo -->
-            <svg class="logo-image" width="40px" height="40px" viewBox="0 0 487 564" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M483.127 292.137L409.537 334.742C407.661 335.828 405.345 335.818 403.479 334.715L88.0521 148.348C84.0524 145.985 79 148.868 79 153.514V403.154C79 407.763 83.9799 410.651 87.9798 408.362L163.544 365.124C167.539 362.839 167.579 357.092 163.617 354.751L142.448 342.242C140.621 341.162 139.5 339.198 139.5 337.076V256.062C139.5 251.406 144.573 248.524 148.572 250.909L338.658 364.229C342.607 366.583 342.55 372.32 338.556 374.596L8.97037 562.389C4.97047 564.668 0 561.779 0 557.176V6.51971C0 1.87281 5.05484 -1.01025 9.05451 1.35541L483.175 281.78C487.124 284.116 487.097 289.839 483.127 292.137Z" />
-            </svg>
-
-          </a>
-
-          <!-- Header Text -->
-          <div class="header-text">
-            <h3 class="myname">Garbtser</h3>
-            <h3 class="motto">Garfic Degisner \ Toncenc Crtearer</h3>
-          </div>
-          <!-- Hamburger icon animated -->
-          <div class="hamburger" id="hamburger-hover"
-            onclick="myFunction(this); document.getElementById('hamburger-menu').classList.toggle('hamburger-active');">
-            <div class="bar1"></div>
-            <div class="bar3"></div>
-          </div>
-          <!-- Desktop Header Items -->
-          <div class="header-links-container">
-            <ul class="header-links">
-              <li><a href="#">Aboot</a></li>
-              <li><a href="mailto:GrabsterStudios@gmail.com">Cotnact</a></li>
-              <li><a href="https://medium.com/@grabstertv" target="_blank">Glob</a></li>
-            </ul>
-          </div>
-
-        </div>
-
-      </div>
-    </header>
-
-
     <main>
-      <div class="container-404">
-        <h1 class="title-404">404</h1>
-        <h3 class="desc-404">Oops! Site just had a stroke searching for this page.</h3>
+        <div class="center-text">
+            <span class="page-title">
+                <svg id="sad-icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M39.96 0C17.88 0 0 17.92 0 40C0 62.08 17.88 80 39.96 80C62.08 80 80 62.08 80 40C80 17.92 62.08 0 39.96 0ZM40 72C22.32 72 8 57.68 8 40C8 22.32 22.32 8 40 8C57.68 8 72 22.32 72 40C72 57.68 57.68 72 40 72Z" fill="#FF6738"/>
+                    <path d="M28.2263 55.6208C30.6983 51.1661 35.4498 48.151 40.9056 48.151C46.3613 48.151 51.1128 51.1661 53.5848 55.6208" id="sad-icon-stroke" stroke-width="7.24528"/>
+                    <circle cx="28.2262" cy="28.2266" r="5.43396"  id="sad-icon-fill"/>
+                    <circle cx="53.5847" cy="28.2266" r="5.43396"  id="sad-icon-fill"/>
+                    </svg>
+                <h1>Well, thats embarressing.</h1>
+            </span>
+            <h3>It would seem this page either does not exist or is coming soon.</h3>
+        </div> 
 
-        <div class="back-container">
-          <p onclick="randomSite();" class="go-back"><a href="javascript:openSite()">Go back home</a></p>
-          <i class="ri-arrow-right-up-line link-arrow"></i>
+        <div class="bored-container">
+            <h3>Bored? Click the button below for an epic funny meme.</h3>
+            <button ripple onclick="randomlink()" class="bored-button">Epic funny meme<div class="ripple--container"></div></button>
         </div>
 
-        <p class="rickroll-warn">Careful! There is a small chance of getting Rick Rolled</p>
-      </div>
     </main>
 
-
-    <footer class="footer">
-      <div class="footer-line"></div>
-
-      <div class="footer-items">
+    <footer>
+        <p>Designed with <i id="heart-icon" class="ph-heart-fill"></i> and lots of procrastination.</p>
         <div>
-          <h3 class="footer-text">
-            Designed & coded with stress & love
-            <br>
-            by <span class="footer-name">Grabster</span>.
-          </h3>
-        </div>
+            <a href="https://twitter.com/grabstertv" target="_blank">
+                <i class="ph-twitter-logo-fill social-icons twitter"></i>
+            </a>
 
-        <div>
-          <a href="mailto:GrabsterStudios@gmail.com" target="ma"> <i class="ph-envelope-open-light social-icon-footer"></i>
-          </a>
-          <a href="https://twitter.com/Grabstertv" target="_blank"> <i
-              class="ph-twitter-logo-light social-icon-footer"></i></a>
-          <a href="https://Youtube.com/GrabsterTV" target="_blank"> <i
-              class="ph-youtube-logo-light social-icon-footer"></i></a>
+            <a href="https://youtube.com/grabstertv" target="_blank">
+                <i class="ph-youtube-logo-fill social-icons youtube"></i>
+            </a>
         </div>
-      </div>
-
     </footer>
 
-    <!-- Javascript Imports -->
-    <script src='js/main.js'></script>
-
     <script>
-      function goBack() {
-        window.history.back();
-      }
+        var randomlinks = [];
+            randomlinks[0]="https://youtu.be/XGws-9h0GJM";
+            randomlinks[1]="https://youtu.be/GJDNkVDGM_s";
+            randomlinks[2]="https://youtu.be/PBJh9t0zl1I";
+            randomlinks[3]="https://youtu.be/zZSCsC36yCI?t=12";
+            randomlinks[4]="https://cdn.discordapp.com/attachments/338422427950252043/814425630221139998/rsz6a6zasy651.jpg";
+            randomlinks[5]="https://filebin.net/od80nc6o31vv7yg7/ok.mp4?t=8794mplg";
+            randomlinks[6]="https://filebin.net/od80nc6o31vv7yg7/AF3IRxl4GFkBgpC___1_.mp4?t=z74dwv1x";
 
-      var sites = [
-        'https://www.youtube.com/watch?v=ub82Xb1C8os',
-        'index.html',
-      ];
+            function randomlink(){
+            window.open(randomlinks[Math.floor(Math.random()*randomlinks.length)]);
+            }
 
-      function randomSite() {
-        var i = parseInt(Math.random() * sites.length);
-        location.href = sites[i];
-      }
 
+            /* ripple effect*/
+
+            (function() { var cleanUp, debounce, i, len, ripple, rippleContainer, ripples, showRipple;
+
+            debounce = function(func, delay) {
+            var inDebounce;
+            inDebounce = undefined;
+            return function() {
+                var args, context;
+                context = this;
+                args = arguments;
+                clearTimeout(inDebounce);
+                return inDebounce = setTimeout(function() {
+                return func.apply(context, args);
+                }, delay);
+            };
+            };
+
+            showRipple = function(e) {
+            var pos, ripple, rippler, size, style, x, y;
+            ripple = this;
+            rippler = document.createElement('span');
+            size = ripple.offsetWidth;
+            pos = ripple.getBoundingClientRect();
+            x = e.pageX - pos.left - (size / 2);
+            y = e.pageY - pos.top - (size / 2);
+            style = 'top:' + y + 'px; left: ' + x + 'px; height: ' + size + 'px; width: ' + size + 'px;';
+            ripple.rippleContainer.appendChild(rippler);
+            return rippler.setAttribute('style', style);
+            };
+
+            cleanUp = function() {
+            while (this.rippleContainer.firstChild) {
+                this.rippleContainer.removeChild(this.rippleContainer.firstChild);
+            }
+            };
+
+            ripples = document.querySelectorAll('[ripple]');
+
+            for (i = 0, len = ripples.length; i < len; i++) {
+            ripple = ripples[i];
+            rippleContainer = document.createElement('div');
+            rippleContainer.className = 'ripple--container';
+            ripple.addEventListener('mousedown', showRipple);
+            ripple.addEventListener('mouseup', debounce(cleanUp, 2000));
+            ripple.rippleContainer = rippleContainer;
+            ripple.appendChild(rippleContainer);
+            }
+            }());
     </script>
 </body>
-
-</html>

@@ -1,0 +1,70 @@
+
+
+#paint-bucket-white {
+    fill: var(--color-primary);
+}
+
+#paint-bucket-icon {
+    width: 25px;
+    padding-right: 15px;
+}
+
+.page-title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.page-description {
+    margin: 0;
+}
+
+.page-title-container {
+    padding: 60px 0;
+}
+
+.page-title-container p {
+    font-size: large;
+}
+
+/* Grid */
+
+.ph-arrows-out {
+    font-size: large;
+    padding-top: 3px;
+}
+
+.item-image {
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* Logoflio Page */
+
+.item-type-compact p {
+    margin-bottom: 0;
+}
+
+#kill-padding {
+    padding-top: 5px;
+}
+
+/* --- Mobile --- */
+
+@media screen and (max-width: 900px) {
+    .landing-title {
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .landing-title {
+        font-size: x-large;
+    }
+    #paint-bucket-icon {
+        width: 22px;
+    }
+    .page-title-container p {
+        font-size: medium;
+    }
+}
