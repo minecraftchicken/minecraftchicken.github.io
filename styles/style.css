@@ -371,10 +371,6 @@ footer div {
         margin-left: 30px;
         font-size: x-large;
     }
-    .sidebar-btn-whenopen {
-        padding-top: 10px;
-        padding-right: 40px;
-    }
     #sidebar {
         display: block;
         position: fixed;
