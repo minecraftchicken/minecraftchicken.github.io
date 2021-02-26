@@ -15,8 +15,7 @@ const toggleTheme = (theme) => {
 }
 /* /// */
 
-// When the user scrolls down 20px from the top of the document, slide down the navbar
-// When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
+// Header Scroll
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -28,3 +27,14 @@ function scrollFunction() {
 }
 
 
+// Sidebar
+
+function sideBar() {
+  var element = document.getElementById("sidebar");
+  element.classList.toggle("sidebar-enabled");
+}
+
+function backgroundDim() {
+  var element = document.getElementById("background-dim");
+  element.classList.toggle("dim-enabled");
+}
