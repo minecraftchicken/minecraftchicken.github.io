@@ -315,6 +315,9 @@ footer div {
 #sidebar {
     display: none;
 }
+#sidebar-button {
+    display: none;
+}
 
 /* --- Mobile --- */
 
@@ -368,6 +371,10 @@ footer div {
         margin-left: 30px;
         font-size: x-large;
     }
+    .sidebar-btn-whenopen {
+        padding-top: 10px;
+        padding-right: 40px;
+    }
     #sidebar {
         display: block;
         position: fixed;
@@ -398,6 +405,7 @@ footer div {
         pointer-events: none;
     }
     #background-dim.dim-enabled {
+        pointer-events: all;
         opacity: 1;
         transition: opacity 300ms ease;
     }
@@ -413,7 +421,7 @@ footer div {
     }
 
     #sidebar ul li {
-        padding: 20px 15%;
+        padding: 20px 40px;
     }
 
     #sidebar-icon {
