@@ -44,6 +44,9 @@
                         <a><i onclick="toggleTheme('dark')" class="light-icon ph-moon-stars-fill"></i></a>
                         <a><i onclick="toggleTheme('light')" class="dark-icon ph-sun-fill"></i></a>
                     </div>
+
+                    <!-- Sidebar toggle button -->
+                    <i onclick="sideBar();backgroundDim()" class="ph-list" id="sidebar-button"></i>
                 </ul>
             </div>
         </div>
@@ -70,12 +73,16 @@
                         <a><i onclick="toggleTheme('dark')" class="light-icon ph-moon-stars-fill"></i></a>
                         <a><i onclick="toggleTheme('light')" class="dark-icon ph-sun-fill"></i></a>
                     </div>
+
+                    <!-- Sidebar toggle button -->
+                    <i onclick="sideBar();backgroundDim()" class="ph-list" id="sidebar-button"></i>
                 </ul>
             </div>
         </div>
     </header>
 
     <main>
+        <div onclick="sideBar();backgroundDim()" id="background-dim"></div>
         <div class="page-title-container">
             <h1 class="page-title">
                 <svg  id="paint-bucket-icon" height="68" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -184,6 +191,24 @@
                 <span class="item-title" id="kill-padding">
                     <h2 class="item-title-text">DashCards</h2>
                 </span>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+
+        <div id="sidebar">
+            <div class="sidebar-container">
+                <ul>
+                    <li class="sidebar-btn-whenopen"><!-- Sidebar toggle button -->
+                        <i onclick="sideBar();backgroundDim()" class="ph-list" id="sidebar-button"></i></li>
+                </ul>
+                <ul class="sidebar-links">
+                    <a href="#"><li>Home<i id="sidebar-icon" class="ph-house-simple"></i></li></a>
+                    <a href="apps.html"><li>Apps<i  id="sidebar-icon"class="ph-squares-four"></i></li></a>
+                    <a href="#"><li>Store<i id="sidebar-icon" class="ph-bag"></i></li></a>
+                    <a href="#"><li>About<i id="sidebar-icon" class="ph-user"></i></li></a>
+                    <a href="#"><li>Contact<i id="sidebar-icon" class="ph-chats"></i></li></a>
+                </ul>
             </div>
         </div>
         

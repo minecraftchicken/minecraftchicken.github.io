@@ -383,7 +383,7 @@ footer div {
         background-color: rgb(var(--background-primary));
         width: 50%;
         height: 100%;
-        z-index: 2;
+        z-index: 3;
         font-size: large;
         transform: translateX(100%);
         transition: transform 300ms ease;
@@ -399,7 +399,7 @@ footer div {
         height: 100%;
         top: 0;
         left: 0%;
-        z-index: 1;
+        z-index: 2;
         opacity: 0;
         transition: opacity 300ms ease;
         pointer-events: none;
@@ -409,7 +409,6 @@ footer div {
         opacity: 1;
         transition: opacity 300ms ease;
     }
-
     #sidebar ul {
         color: rgb(var(--background-primary));
         text-decoration: none;

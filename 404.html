@@ -146,6 +146,7 @@
 
 <body>
     <header>
+        <div onclick="sideBar();backgroundDim()" id="background-dim"></div>
         <div class="header-container">
             <a href="index.html">
                 <div class="brand-container">
@@ -167,6 +168,9 @@
                         <a><i onclick="toggleTheme('dark')" class="light-icon ph-moon-stars-fill"></i></a>
                         <a><i onclick="toggleTheme('light')" class="dark-icon ph-sun-fill"></i></a>
                     </div>
+
+                    <!-- Sidebar toggle button -->
+                    <i onclick="sideBar();backgroundDim()" class="ph-list" id="sidebar-button"></i>
                 </ul>
             </div>
         </div>
@@ -187,6 +191,24 @@
         <div class="bored-container">
             <h3>Bored? Click the button below for an epic funny meme.</h3>
             <button ripple onclick="randomlink()" class="bored-button">Epic funny meme<div class="ripple--container"></div></button>
+        </div>
+
+        <!-- Sidebar -->
+
+        <div id="sidebar">
+            <div class="sidebar-container">
+                <ul>
+                    <li class="sidebar-btn-whenopen"><!-- Sidebar toggle button -->
+                        <i onclick="sideBar();backgroundDim()" class="ph-list" id="sidebar-button"></i></li>
+                </ul>
+                <ul class="sidebar-links">
+                    <a href="#"><li>Home<i id="sidebar-icon" class="ph-house-simple"></i></li></a>
+                    <a href="apps.html"><li>Apps<i  id="sidebar-icon"class="ph-squares-four"></i></li></a>
+                    <a href="#"><li>Store<i id="sidebar-icon" class="ph-bag"></i></li></a>
+                    <a href="#"><li>About<i id="sidebar-icon" class="ph-user"></i></li></a>
+                    <a href="#"><li>Contact<i id="sidebar-icon" class="ph-chats"></i></li></a>
+                </ul>
+            </div>
         </div>
 
     </main>
