@@ -5,6 +5,10 @@ html {
     padding: 0 60px;
 }
 
+body {
+    height: 100vh;
+}
+
 /* Dark Mode */
 
 
@@ -19,7 +23,7 @@ html {
 html[data-theme='dark'] {
     --background-primary: 20, 20, 20;
     --color-primary: 245, 245, 245;
-    --color-secondary: 212, 192, 192;
+    --color-secondary: 213, 213, 213;
     --image-invert: invert(1);
 }
 
@@ -156,9 +160,10 @@ main {
     height: 60px;
     top: -60px;
     /* Hide the navbar 50 px outside of the top view */
-    transition: top 0.4s ease;
-    background-color: rgb(var(--background-primary));
+    transition: top 0.4s ease, color 250ms, background-color 250ms;
     z-index: 1;
+    background: rgb(var(--background-primary));
+    color: rgb(var(--color-primary));
 }
 
 .slide-nav-container .brand-container {

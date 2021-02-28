@@ -49,6 +49,19 @@
     padding-top: 5px;
 }
 
+/* Long previews */
+
+.long-preview {
+    height: 600px;
+    filter: brightness(1);
+    transition: filter 300ms ease;
+}
+
+.long-preview:hover {
+    filter: brightness(0.8);
+    transition: filter 300ms ease;
+}
+
 /* --- Mobile --- */
 
 @media screen and (max-width: 900px) {
