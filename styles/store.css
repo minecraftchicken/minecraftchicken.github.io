@@ -1,0 +1,77 @@
+/* Button */
+
+.buttons-container {
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding:7px 0;
+}
+
+.download-button {
+    width: fit-content;
+    height: 36px;
+    padding: 0 25px;
+    margin: 0 5px 0 0;
+    border: 0;
+    background-color: #3bc679;
+    border-radius: 4px;
+    color: #fcfcfc;
+    font-size: small;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+#purchase-button {
+    background-color: #3bc679;
+}
+
+.download-button:hover {
+    background-color: #3bc679b0;
+    transition: all .2s ease;
+}
+
+.secondary-button {
+    width: fit-content;
+    height: 36px;
+    padding: 0 22px;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px #3bc679;
+    border-radius: 4px;
+    color: #2eac67;
+    font-size: small;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.secondary-button:hover {
+    background-color: #3bc67921;
+    transition: all .2s ease;
+}
+
+/* Other styles */
+
+#store-title {
+    padding-bottom: 30px;
+}
+
+#store-title-2 {
+    padding: 0 0 30px 0;
+}
+
+#item-label {
+    font-size: 15px;
+    color: rgba(var(--color-primary), 0.6);
+}
+
+#item-description {
+    font-size: 18px;
+    width: 95%;
+}
+
+#price {
+    color: #2eac67;
+    font-weight: 600;
+}

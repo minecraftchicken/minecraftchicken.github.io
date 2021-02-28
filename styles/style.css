@@ -136,6 +136,7 @@ main {
     float: left;
     display: flex;
     align-items: center;
+    width: max-content;
 }
 
 .logo-svg {
@@ -238,7 +239,7 @@ li {
 }
 
 .item-type-compact {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     flex-basis: calc(100% / 3);
 }
 
@@ -325,6 +326,12 @@ footer div {
 }
 #sidebar-button {
     display: none;
+}
+
+/* Misc */
+
+#kill-padding {
+    padding-top: 10px;
 }
 
 /* --- Mobile --- */
