@@ -28,6 +28,7 @@
 .app-type p {
     font-size: small;
     padding: 0 13px;
+    color: rgba(var(--color-primary), 0.7);
 }
 
 #first-apptype {
@@ -86,4 +87,5 @@
 
 #winner-text {
     font-size: small;
+    font-weight: 400;
 }

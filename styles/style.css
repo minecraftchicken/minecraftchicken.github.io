@@ -16,7 +16,7 @@ html {
     --background-primary: 252, 252, 252;
     --color-primary: 47, 47, 47;
     --color-secondary: 98, 98, 98;
-    --color-superlight: 180, 180, 180;
+    --footer-line: 180, 180, 180;
     --image-invert: invert(0);
 }
 
@@ -29,19 +29,22 @@ html[data-theme='dark'] {
 
 .invertable {
     filter: var(--image-invert);
+    transition: filter 300ms;
 }
 
 html {
-    transition: color 250ms, background-color 250ms;
+    transition: color 300ms, background-color 300ms;
     background: rgb(var(--background-primary));
     color: rgb(var(--color-primary));
 }
 
 h1, h2 {
+    transition: color 300ms, background-color 300ms;
     color: rgb(var(--color-primary));
 }
 
 h3, p {
+    transition: color 300ms, background-color 300ms;
     color: rgb(var(--color-secondary));
 }
 
@@ -63,7 +66,7 @@ h3, p {
 }
 
 #divider-line {
-    color: rgb(var(--color-superlight));
+    color: rgb(var(--footer-line));
 }
 
 /* /// */
@@ -160,7 +163,7 @@ main {
     height: 60px;
     top: -60px;
     /* Hide the navbar 50 px outside of the top view */
-    transition: top 0.4s ease, color 250ms, background-color 250ms;
+    transition: top 0.4s ease, color 300ms, background-color 300ms;
     z-index: 1;
     background: rgb(var(--background-primary));
     color: rgb(var(--color-primary));
