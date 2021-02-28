@@ -16,7 +16,6 @@ html {
     --background-primary: 252, 252, 252;
     --color-primary: 47, 47, 47;
     --color-secondary: 98, 98, 98;
-    --footer-line: 180, 180, 180;
     --image-invert: invert(0);
 }
 
@@ -66,7 +65,8 @@ h3, p {
 }
 
 #divider-line {
-    color: rgb(var(--footer-line));
+    transition: color 300ms;
+    color: rgba(var(--color-primary), 0.3);
 }
 
 /* /// */

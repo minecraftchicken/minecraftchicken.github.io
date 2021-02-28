@@ -1,0 +1,192 @@
+<html data-theme="light">
+
+<head>
+    <title>Grabster — Store</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/logo.png" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <!-- Favicon -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <!-- Javascript -->
+    <script src="js/javascript.js"></script>
+    <!-- Mobile res -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div onclick="sideBar();backgroundDim()" id="background-dim"></div>
+        <div class="header-container">
+            <a href="index.html">
+                <div class="brand-container">
+                    <img class="logo-svg" src="images/logo-vector.svg" alt="Grabster Logo">
+                    <h2 class="name">Grabster</h2>
+                </div>
+            </a>
+
+            <div class="nav-container">
+                <ul class="nav-list">
+                    <li><a href="">Apps</a></li>
+                    <li><a href="">Store</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+
+                    <li><span id="divider-line">|</span></li>
+
+                    <div>
+                        <a><i onclick="toggleTheme('dark')" class="light-icon ph-moon-stars-fill"></i></a>
+                        <a><i onclick="toggleTheme('light')" class="dark-icon ph-sun-fill"></i></a>
+                    </div>
+
+                    <!-- Sidebar toggle button -->
+                    <i onclick="sideBar();backgroundDim()" class="ph-list" id="sidebar-button"></i>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Nav slides on scroll -->
+        <div class="slide-nav-container" id="navbar">
+
+            <a href="index.html">
+                <div class="brand-container">
+                    <img class="logo-svg" src="images/logo-vector.svg" alt="Grabster Logo">
+                </div>
+            </a>
+
+            <div class="slide-navlist-container">
+                <ul class="nav-list">
+                    <li><a href="">Apps</a></li>
+                    <li><a href="">Store</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+
+                    <li><span id="divider-line">|</span></li>
+
+                    <div>
+                        <a><i onclick="toggleTheme('dark')" class="light-icon ph-moon-stars-fill"></i></a>
+                        <a><i onclick="toggleTheme('light')" class="dark-icon ph-sun-fill"></i></a>
+                    </div>
+
+                    <!-- Sidebar toggle button -->
+                    <i onclick="sideBar();backgroundDim()" class="ph-list" id="sidebar-button"></i>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-title-container">
+            <h1 class="page-title">
+                <svg id="paint-bucket-icon" height="97" viewBox="0 0 92 97" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M19 27C19 12.0883 31.0883 0 46 0C60.9117 0 73 12.0883 73 27V55.5H63V27C63 17.6112 55.3888 10 46 10C36.6112 10 29 17.6112 29 27V55.5H19V27Z"
+                        fill="#FF6738" />
+                    <path id="paint-bucket-white" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 28H92V97H0V28ZM10 38V87H82V38H10Z" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29 27.5V55.5H19V27.5H29Z" fill="#FF6738" />
+                </svg>
+
+                Digital Store
+            </h1>
+            <p class="page-description">Explore all the free and premium digital products
+                I have to offer.
+
+            </p>
+        </div>
+
+        <div class="item-type-compact">
+            <a href=""><img class="item-image" src="images/landing-page/designs.jpg" alt=""></a>
+            <span class="item-title">
+                <h2 class="item-title-text"><a href="">Tasker Projects</a></h2>
+                <span id="hover-arrow" class="material-icons">east</span>
+            </span>
+            <h3>Make your life smarter and easier.</h3>
+        </div>
+
+        <div class="items-container">
+            <div class="item-type-compact">
+                <a href="logofolio.html"><img class="item-image invertable" src="images/projects/covers/cover-logo.jpg"
+                        alt=""></a>
+                <span class="item-title">
+                    <h2 class="item-title-text"><a href="logofolio.html">Photoshop Templates</a></h2>
+                    <span id="hover-arrow" class="material-icons">east</span>
+                </span>
+                <h3>Created with precision & ease of use.</h3>
+            </div>
+
+            <div class="item-type-compact">
+                <a href="abstract.html"><img class="item-image" src="images/landing-page/designs.jpg" alt=""></a>
+                <span class="item-title">
+                    <h2 class="item-title-text"><a href="abstract.html">Premiere Pro Templates</a></h2>
+                    <span id="hover-arrow" class="material-icons">east</span>
+                </span>
+                <h3>Add some spice to your video projects.</h3>
+            </div>
+        </div>
+
+        <div class="item-type-compact">
+            <a href="abstract.html"><img class="item-image" src="images/landing-page/designs.jpg" alt=""></a>
+            <span class="item-title">
+                <h2 class="item-title-text"><a href="abstract.html">Logo Designs</a></h2>
+                <span id="hover-arrow" class="material-icons">east</span>
+            </span>
+            <h3>Get a ready-to-use logo for your product.</h3>
+        </div>
+    </div>
+
+        <!-- Sidebar -->
+
+        <div id="sidebar">
+            <div class="sidebar-container">
+                <ul>
+                    <li class="sidebar-btn-whenopen">
+                        <!-- Sidebar toggle button -->
+                        <i onclick="sideBar();backgroundDim()" class="ph-list" id="sidebar-button"></i>
+                    </li>
+                </ul>
+                <ul class="sidebar-links">
+                    <a href="index.html">
+                        <li>Home<i id="sidebar-icon" class="ph-house-simple"></i></li>
+                    </a>
+                    <a href="apps.html">
+                        <li>Apps<i id="sidebar-icon" class="ph-squares-four"></i></li>
+                    </a>
+                    <a href="#">
+                        <li>Store<i id="sidebar-icon" class="ph-bag"></i></li>
+                    </a>
+                    <a href="#">
+                        <li>About<i id="sidebar-icon" class="ph-user"></i></li>
+                    </a>
+                    <a href="#">
+                        <li>Contact<i id="sidebar-icon" class="ph-chats"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Designed & coded with stress & love by Grabster.</p>
+        <div>
+            <a href="https://twitter.com/grabstertv" target="_blank">
+                <i class="ph-twitter-logo-fill social-icons twitter"></i>
+            </a>
+
+            <a href="https://youtube.com/grabstertv" target="_blank">
+                <i class="ph-youtube-logo-fill social-icons youtube"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
