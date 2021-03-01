@@ -9,7 +9,7 @@
     padding:7px 0;
 }
 
-.download-button {
+.download-button, .purchase-button {
     width: fit-content;
     height: 36px;
     padding: 0 25px;
@@ -17,22 +17,18 @@
     border: 0;
     background-color: #3bc679;
     border-radius: 4px;
-    color: #fcfcfc;
+    color: #ffffff;
     font-size: small;
     cursor: pointer;
     transition: all .2s ease;
 }
 
-#purchase-button {
-    background-color: #3bc679;
-}
-
-.download-button:hover {
-    background-color: #3bc679b0;
+.download-button:hover, .purchase-button:hover {
+    background-color: #6adf9f;
     transition: all .2s ease;
 }
 
-.secondary-button {
+.secondary-button, .price-button {
     width: fit-content;
     height: 36px;
     padding: 0 22px;
@@ -71,7 +67,21 @@
     width: 95%;
 }
 
+/*
 #price {
     color: #2eac67;
     font-weight: 600;
+}*/
+
+.price-button {
+    background: none rgb(29 151 83 / 85%);
+    color: white;
+    padding: 0 15px;
+    margin-left: 0;
+    border-radius: 4px 0 0 4px;
+    pointer-events: none;
+}
+
+.purchase-button {
+    margin-left: -11px;
 }
