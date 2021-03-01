@@ -5,6 +5,10 @@ html {
     padding: 0 60px;
 }
 
+button {
+    font-family: 'Manrope', sans-serif;
+}
+
 body {
     height: 100vh;
 }
