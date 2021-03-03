@@ -26,7 +26,6 @@ function scrollFunction() {
   }
 }
 
-
 // Sidebar
 
 function sideBar() {
@@ -37,4 +36,11 @@ function sideBar() {
 function backgroundDim() {
   var element = document.getElementById("background-dim");
   element.classList.toggle("dim-enabled");
+}
+
+// Store warning popup
+
+function storeWarning() {
+  var element = document.getElementById("warning-container");
+  element.classList.toggle("warning-shown");
 }
