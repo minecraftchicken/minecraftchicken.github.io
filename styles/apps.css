@@ -38,10 +38,9 @@
 /* Button */
 
 .buttons-container {
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
     overflow: hidden;
     padding: 7px 0;
 }
