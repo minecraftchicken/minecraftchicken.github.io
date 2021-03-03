@@ -44,3 +44,16 @@ function storeWarning() {
   var element = document.getElementById("warning-container");
   element.classList.toggle("warning-shown");
 }
+
+// Toast
+
+function toastMessage() {
+  // Get the snackbar DIV
+  var x = document.getElementById("toast");
+
+  // Add the "show" class to DIV
+  x.className = "toast-shown";
+
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function(){ x.className = x.className.replace("toast-shown", ""); }, 3000);
+}
