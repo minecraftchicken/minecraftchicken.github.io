@@ -346,9 +346,10 @@ footer div {
     margin: auto;
     z-index: 2;
     bottom: 20px;
-    width: 160px;
+    width: fit-content;
+    padding: 0 25px;
     border-radius: 4px;
-    border: solid 1px #ff6738;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     opacity: 0;
     background-color: rgb(var(--color-primary));
     transition: opacity .2s ease-in-out;
