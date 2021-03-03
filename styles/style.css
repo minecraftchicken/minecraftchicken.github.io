@@ -165,7 +165,8 @@ main {
     justify-content: stretch;
     align-items: center;
     height: 60px;
-    top: -60px;
+    top: -61px;
+    border-bottom: solid 1px #ff6738;
     /* Hide the navbar 50 px outside of the top view */
     transition: top 0.4s ease, color 300ms, background-color 300ms;
     z-index: 1;
