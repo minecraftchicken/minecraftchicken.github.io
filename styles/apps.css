@@ -22,7 +22,7 @@
     flex-wrap: wrap;
     flex: start;
     overflow: hidden;
-    padding:7px 0;
+    padding: 7px 0;
 }
 
 .app-type p {
@@ -35,7 +35,6 @@
     padding-left: 0;
 }
 
-
 /* Button */
 
 .buttons-container {
@@ -44,7 +43,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     overflow: hidden;
-    padding:7px 0;
+    padding: 7px 0;
 }
 
 .download-button {

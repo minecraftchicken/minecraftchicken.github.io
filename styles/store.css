@@ -6,7 +6,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     overflow: hidden;
-    padding:7px 0;
+    padding: 7px 0;
 }
 
 .download-button, .purchase-button {
@@ -79,5 +79,4 @@
 .purchase-button {
     margin-left: -10px;
     border-radius: 0 4px 4px 0;
-
 }

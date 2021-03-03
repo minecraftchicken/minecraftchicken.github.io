@@ -15,7 +15,6 @@ body {
 
 /* Dark Mode */
 
-
 html {
     --background-primary: 252, 252, 252;
     --color-primary: 47, 47, 47;
@@ -280,7 +279,6 @@ footer {
     padding-top: 20px;
     margin-top: 35px;
     padding-bottom: 20px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -333,6 +331,7 @@ footer div {
 #sidebar {
     display: none;
 }
+
 #sidebar-button {
     display: none;
 }
@@ -381,7 +380,8 @@ footer div {
     }
     .slide-navlist-container ul li {
         display: none;
-    }.nav-container ul li {
+    }
+    .nav-container ul li {
         display: none;
     }
     .light-icon, .dark-icon {
@@ -400,19 +400,18 @@ footer div {
         object-fit: cover;
     }
     .item-type-compact {
-    flex-basis: 100%;
+        flex-basis: 100%;
     }
     .slide-nav-container .brand-container {
         padding-left: 25px;
     }
     .slide-navlist-container {
-        padding-right:25px;
+        padding-right: 25px;
     }
-
     /* SIDEBAR */
     #sidebar-button {
-    display: inline-block;
-    }  
+        display: inline-block;
+    }
     #sidebar-button {
         color: rgb(var(--color-primary));
         margin-left: 30px;
@@ -437,7 +436,7 @@ footer div {
     }
     #background-dim {
         position: fixed;
-        background-color: rgba(var(--color-primary),0.8);
+        background-color: rgba(var(--color-primary), 0.8);
         width: 100%;
         height: 100%;
         top: 0;
@@ -461,23 +460,18 @@ footer div {
         flex-direction: column;
         color: rgb(var(--color-primary));
     }
-
     #sidebar ul li {
         padding: 20px 40px;
     }
-
     #sidebar-icon {
         padding-left: 15px;
     }
-
     #about-me {
         width: 100%;
     }
-
     #about-me-container {
         flex-direction: column;
     }
-
     #self-portrait {
         width: 100%;
         height: 400px;

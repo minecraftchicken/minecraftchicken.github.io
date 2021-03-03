@@ -1,7 +1,6 @@
-
-
 #paint-bucket-white {
-    fill: rgb(var(--color-primary));;
+    fill: rgb(var(--color-primary));
+    ;
 }
 
 #paint-bucket-icon {
