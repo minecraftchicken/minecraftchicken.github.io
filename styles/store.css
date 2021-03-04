@@ -9,7 +9,7 @@
     padding: 7px 0;
 }
 
-.download-button, .purchase-button {
+.button-fill-cta, .purchase-button {
     width: fit-content;
     height: 36px;
     padding: 0 25px;
@@ -23,12 +23,12 @@
     transition: all .2s ease;
 }
 
-.download-button:hover, .purchase-button:hover {
+.button-fill-cta:hover, .purchase-button:hover {
     background-color: #6adf9f;
     transition: all .2s ease;
 }
 
-.secondary-button, .price-button {
+.button-outline-cta, .price-button {
     width: fit-content;
     height: 36px;
     padding: 0 22px;
@@ -42,7 +42,7 @@
     transition: all .2s ease;
 }
 
-.secondary-button:hover {
+.button-outline-cta:hover {
     background-color: #3bc67921;
     transition: all .2s ease;
 }

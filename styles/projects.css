@@ -3,11 +3,6 @@
     ;
 }
 
-#paint-bucket-icon {
-    width: 22px;
-    padding-right: 15px;
-}
-
 .page-title {
     display: flex;
     align-items: center;

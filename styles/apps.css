@@ -10,7 +10,7 @@
 
 #long-desc {
     font-size: medium;
-    font-weight: 450;
+    font-weight: 400;
     width: 95%;
     padding-top: 10px;
 }
@@ -45,7 +45,7 @@
     padding: 7px 0;
 }
 
-.download-button {
+.button-fill-cta {
     width: fit-content;
     height: 36px;
     padding: 0 25px;
@@ -59,12 +59,12 @@
     transition: all .2s ease;
 }
 
-.download-button:hover {
+.button-fill-cta:hover {
     background-color: #ff835e;
     transition: all .2s ease;
 }
 
-.secondary-button {
+.button-outline-cta {
     width: fit-content;
     height: 36px;
     padding: 0 22px;
@@ -78,7 +78,7 @@
     transition: all .2s ease;
 }
 
-.secondary-button:hover {
+.button-outline-cta:hover {
     background-color: #ff774e23;
     transition: all .2s ease;
 }
