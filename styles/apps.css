@@ -51,7 +51,7 @@
     padding: 0 25px;
     margin: 0 5px 0 0;
     border: 0;
-    background-color: #ff6738;
+    background-color: var(--accent-color);
     border-radius: 4px;
     color: #fcfcfc;
     font-size: small;
