@@ -1,7 +1,7 @@
 <html data-theme="light">
 
 <head>
-    <title>About — Grabster</title>
+    <title>Contact — Grabster</title>
     <link rel="shortcut icon" type="image/jpg" href="images/logo.png" />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/style.css" />
@@ -82,53 +82,43 @@
 
     <main>
         
-        <div class="page-title-container">
+        <div class="page-title-container" id="contact-container">
             <h1 class="page-title">
 
                 <svg id="page-icon" style="padding-bottom: 2px;" viewBox="0 0 94 75" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.55872 8.62732L11.4413 1.37268L47 35.1079L82.5587 1.37268L89.4413 8.62732L47 48.8921L4.55872 8.62732Z" fill="#FF6738"/>
                     <path id="page-icon-white" clip-rule="evenodd" d="M0.5 0.5H93.5V74.5H0.5V0.5ZM9.5 9.5V65.5H84.5V9.5H9.5Z"/>
                 </svg>
-                    
-
-                    
                 Let's chat!
             </h1>
             <p class="page-description">Business inquiries? Need help with any of my products? Need someone to talk to? 
-                <br>Fill in the form below and I will get back to you ASAP!
+                <br>Send me a message via Email or Twitter and I will get back to you ASAP!
             </p>
+
+            <div id="contact-buttons-container">
+                <a href="mailto:contact@grabsterstudios.com">
+                    <button class="button-fill-cta">
+                        <i class="mdi mdi-email" style="padding-right: 7px;"></i>
+                        Contact via Email
+                    </button>
+                </a>
+                <a href="https://twitter.com/messages/compose?recipient_id=798214168495214592" target="_blank">
+                    <button class="button-outline-cta" id="contact-twitter">
+                        <i class="mdi mdi-twitter" style="padding-right: 7px;"></i>
+                        DM via Twitter
+                    </button>
+                </a>
+
+                <a href="https://discord.com/channels/@me/752122986781212752" target="_blank">
+                    <button class="button-outline-cta" id="contact-discord">
+                        <i class="mdi mdi-discord" style="padding-right: 7px;"></i>
+                        DM via Discord
+                    </button>
+            </a>
+            </div>
+
+            <p id="contact-email">contact@grabsterstudios.com</p>
         </div>
-
-        <form action="contact-form" action="contactform.php" method="post">
-            
-            <div class="form-inputfields">
-
-                <div class="form-container">
-                    <input type="text" required name="name" autocomplete="off" maxlength="50"/>
-                    <label for="name" class="label-name">
-                        <span class="content-name">Your Name</span>
-                    </label>
-                </div>
-    
-                <div class="form-container" id="email-container">
-                    <input type="mail" required name="mail" autocomplete="off"/>
-                    <label for="mail" class="label-name">
-                        <span class="content-name">Your Email</span>
-                    </label>
-                </div>
-
-            </div>
-
-            <br>
-
-            <textarea name="message" placeholder="Your message"></textarea>
-            
-            <br>
-            <div id="button-actions">
-                <button class="button-fill-cta" type="submit" name="submit"><i class="mdi mdi-send" style="padding-right: 10px; font-size: 1.1em;"></i>Send</button>
-                <p><a href="mailto:contact@grabsterstudios.com">contact@grabsterstudios.com</a></p>
-            </div>
-        </form>
 
         <!-- Sidebar -->
 
