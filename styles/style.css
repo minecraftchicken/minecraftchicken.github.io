@@ -394,7 +394,7 @@ form textarea {
 
 form textarea {
     margin: 5px 0 30px 0;
-    padding: 10px;
+    padding: 15px;
     width: 50%;
     height: 160px;
     font-family: sans-serif;
@@ -407,6 +407,18 @@ form textarea {
 form textarea::placeholder {
     font-size: 1.1em;
     color: rgba(var(--color-secondary), 0.5);
+}
+
+#button-actions {
+    display: flex;
+    align-items: center;
+}
+
+#button-actions p {
+    margin: 0;
+    padding-left: 20px;
+    font-size: .8em;
+    color: rgba(var(--color-primary), 0.6);
 }
 
 /* Form float styling */
@@ -487,9 +499,14 @@ form textarea::placeholder {
     padding-top: 10px;
 }
 
-#paint-bucket-icon {
+#page-icon {
     width: 25px;
     padding-right: 15px;
+}
+
+#page-icon-white {
+    fill: rgb(var(--color-primary));
+    ;
 }
 
 /* --- Mobile --- */
@@ -587,11 +604,12 @@ form textarea::placeholder {
         color: rgb(var(--color-primary));
     }
     #sidebar ul li {
-        padding: 20px 40px;
+        padding: 25px 40px;
     }
     #sidebar-icon {
         padding-left: 15px;
     }
+    /* Footer */
     footer {
         display: flex;
         flex-direction: column;
@@ -604,6 +622,7 @@ form textarea::placeholder {
         padding-left: 30px;
         padding-right: 45px;
     }
+    /* About me page */
     #about-me {
         width: 100%;
     }
@@ -616,7 +635,6 @@ form textarea::placeholder {
         object-fit: cover;
         margin: 35px 0;
     }
-
     /* Form styling */
     .form-container {
         width: 100%;

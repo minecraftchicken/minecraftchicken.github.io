@@ -85,10 +85,12 @@
         <div class="page-title-container">
             <h1 class="page-title">
 
-                <svg id="paint-bucket-icon" viewBox="0 0 87 76" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M43 33.9645L10.5355 1.5L3.46448 8.57107L43 48.1066L82 9.10665L74.9289 2.03558L43 33.9645Z" fill="#FF6738"/>
-                    <path id="paint-bucket-white" fill-rule="evenodd" clip-rule="evenodd" d="M0 0.0355225H87V75.0355H0V0.0355225ZM10 10.0355V65.0355H77V10.0355H10Z" />
+                <svg id="page-icon" style="padding-bottom: 2px;" viewBox="0 0 94 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.55872 8.62732L11.4413 1.37268L47 35.1079L82.5587 1.37268L89.4413 8.62732L47 48.8921L4.55872 8.62732Z" fill="#FF6738"/>
+                    <path id="page-icon-white" clip-rule="evenodd" d="M0.5 0.5H93.5V74.5H0.5V0.5ZM9.5 9.5V65.5H84.5V9.5H9.5Z"/>
                 </svg>
+                    
+
                     
                 Let's chat!
             </h1>
@@ -122,8 +124,10 @@
             <textarea name="message" placeholder="Your message"></textarea>
             
             <br>
-
-            <button class="button-fill-cta" type="submit" name="submit">Send Message</button>
+            <div id="button-actions">
+                <button class="button-fill-cta" type="submit" name="submit"><i class="mdi mdi-send" style="padding-right: 10px; font-size: 1.1em;"></i>Send</button>
+                <p><a href="mailto:contact@grabsterstudios.com">contact@grabsterstudios.com</a></p>
+            </div>
         </form>
 
         <!-- Sidebar -->
@@ -138,19 +142,19 @@
                 </ul>
                 <ul class="sidebar-links">
                     <a href="index.html">
-                        <li>Home<i id="sidebar-icon" class="ph-house-simple"></i></li>
+                        <li>Home<i id="sidebar-icon" class="mdi mdi-home"></i></li>
                     </a>
                     <a href="apps.html">
-                        <li>Apps<i id="sidebar-icon" class="ph-squares-four"></i></li>
+                        <li>Apps<i id="sidebar-icon" class="mdi mdi-apps"></i></li>
                     </a>
                     <a href="#">
-                        <li>Store<i id="sidebar-icon" class="ph-bag"></i></li>
+                        <li>Store<i id="sidebar-icon" class="mdi mdi-store"></i></li>
                     </a>
                     <a href="#">
-                        <li>About<i id="sidebar-icon" class="ph-user"></i></li>
+                        <li>About<i id="sidebar-icon" class="mdi mdi-information-outline"></i></li>
                     </a>
                     <a href="#">
-                        <li>Contact<i id="sidebar-icon" class="ph-chats"></i></li>
+                        <li>Contact<i id="sidebar-icon" class="mdi mdi-account-box-outline"></i></li>
                     </a>
                 </ul>
             </div>
