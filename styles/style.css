@@ -404,6 +404,7 @@ footer div {
 
 #contact-container p {
     margin-bottom: 30px;
+    font-size: 1em;
 }
 
 #contact-twitter {
@@ -570,6 +571,11 @@ footer div {
         height: 400px;
         object-fit: cover;
         margin: 35px 0;
+    }
+    /* Contact page */
+    
+    #contact-container p {
+        font-size: .8em;
     }
 }
 
